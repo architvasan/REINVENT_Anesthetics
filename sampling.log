@@ -1,0 +1,83 @@
+16:21:50 <INFO> Started REINVENT 4.0.28 (C) AstraZeneca 2017, 2023 on 2024-01-04
+16:21:50 <INFO> Command line: /homes/avasan/miniconda3/envs/reinvent4/bin/reinvent -l sampling.log configs/toml/staged_learning.toml
+16:21:50 <INFO> User avasan on host lambda4
+16:21:50 <INFO> Python version 3.10.13
+16:21:50 <INFO> PyTorch version 1.12.1+cu113, git 664058fa83f1d8eede5d66418abff6e20bd76ca8
+16:21:50 <INFO> PyTorch compiled with CUDA version 11.3
+16:21:50 <INFO> RDKit version 2022.09.5
+16:21:50 <INFO> Platform Linux-5.4.0-164-generic-x86_64-with-glibc2.31
+16:21:50 <INFO> CUDA driver version 535.104.12
+16:21:50 <INFO> Number of PyTorch CUDA devices 8
+16:21:51 <INFO> Using CUDA device:0 Tesla V100-SXM2-32GB
+16:21:51 <INFO> GPU memory: 4433 MiB free, 32501 MiB total
+16:21:51 <INFO> Writing TensorBoard summary to /lambda_stor/homes/avasan/REINVENT4/tb_logs
+16:21:51 <INFO> Writing JSON config file to /lambda_stor/homes/avasan/REINVENT4/_staged_learning.json
+16:21:51 <INFO> Starting 2 stages of Reinforcement Learning
+16:21:54 <INFO> Using generator Reinvent
+16:21:54 <INFO> Prior read from /lambda_stor/homes/avasan/REINVENT4/priors/reinvent.prior
+16:21:54 <INFO> Agent read from /lambda_stor/homes/avasan/REINVENT4/priors/reinvent.prior
+16:21:54 <INFO> Using reward strategy dap
+16:21:54 <INFO> Using diversity filter IdenticalMurckoScaffold
+16:21:54 <INFO> Diversity filter memories are retained between stages
+16:21:54 <WARN> Inception disabled but may speed up convergence
+16:21:55 <INFO> Registered scoring component ROCSSimilarity
+16:21:55 <INFO> Registered scoring component GroupCount
+16:21:55 <INFO> Registered scoring component FragmentQed
+16:21:55 <INFO> Registered scoring component FragmentSlogP
+16:21:55 <INFO> Registered scoring component FragmentMolecularWeight
+16:21:55 <INFO> Registered scoring component FragmentTPSA
+16:21:55 <INFO> Registered scoring component FragmentDistanceMatrix
+16:21:55 <INFO> Registered scoring component FragmentNumAtomStereoCenters
+16:21:55 <INFO> Registered scoring component FragmentHBondAcceptors
+16:21:55 <INFO> Registered scoring component FragmentHBondDonors
+16:21:55 <INFO> Registered scoring component FragmentNumRotBond
+16:21:55 <INFO> Registered scoring component FragmentCsp3
+16:21:55 <INFO> Registered scoring component Fragmentnumsp
+16:21:55 <INFO> Registered scoring component Fragmentnumsp2
+16:21:55 <INFO> Registered scoring component Fragmentnumsp3
+16:21:55 <INFO> Registered scoring component FragmentEffectiveLength
+16:21:55 <INFO> Registered scoring component FragmentGraphLength
+16:21:55 <INFO> Registered scoring component FragmentLengthRatio
+16:21:55 <INFO> Registered scoring component FragmentNumHeavyAtoms
+16:21:55 <INFO> Registered scoring component FragmentNumHeteroAtoms
+16:21:55 <INFO> Registered scoring component FragmentNumRings
+16:21:55 <INFO> Registered scoring component FragmentNumAromaticRings
+16:21:55 <INFO> Registered scoring component FragmentNumAliphaticRings
+16:21:55 <INFO> Registered scoring component FragmentSlogP
+16:21:55 <INFO> Registered scoring component MatchingSubstructure
+16:21:55 <INFO> Registered scoring component MolVolume
+16:21:55 <INFO> Registered scoring component Qed
+16:21:55 <INFO> Registered scoring component SlogP
+16:21:55 <INFO> Registered scoring component MolecularWeight
+16:21:55 <INFO> Registered scoring component GraphLength
+16:21:55 <INFO> Registered scoring component NumAtomStereoCenters
+16:21:55 <INFO> Registered scoring component HBondAcceptors
+16:21:55 <INFO> Registered scoring component HBondDonors
+16:21:55 <INFO> Registered scoring component NumRotBond
+16:21:55 <INFO> Registered scoring component Csp3
+16:21:55 <INFO> Registered scoring component numsp
+16:21:55 <INFO> Registered scoring component numsp2
+16:21:55 <INFO> Registered scoring component numsp3
+16:21:55 <INFO> Registered scoring component NumHeavyAtoms
+16:21:55 <INFO> Registered scoring component NumHeteroAtoms
+16:21:55 <INFO> Registered scoring component NumRings
+16:21:55 <INFO> Registered scoring component NumAromaticRings
+16:21:55 <INFO> Registered scoring component NumAliphaticRings
+16:21:55 <INFO> Registered scoring component SlogP
+16:21:55 <INFO> Registered scoring component PMI
+16:21:55 <INFO> Registered scoring component TanimotoDistance
+16:21:55 <INFO> Registered scoring component TPSA
+16:21:55 <INFO> Registered scoring component SAScore
+16:21:57 <INFO> Registered scoring component ChemProp
+16:21:57 <INFO> Registered scoring component CustomAlerts
+16:21:57 <INFO> Registered scoring component DockStream
+16:21:57 <INFO> Registered scoring component ExternalProcess
+16:21:57 <INFO> Registered scoring component REST
+16:21:57 <INFO> Registered scoring component Icolos
+16:21:57 <INFO> Registered scoring component Maize
+16:21:57 <INFO> Registered scoring component MMP
+16:21:57 <INFO> Registered scoring component Qptuna
+16:21:57 <INFO> Registered scoring component ReactionFilter
+16:21:57 <INFO> Creating filter component custom_alerts
+16:21:57 <INFO> Creating scoring component MolecularWeight
+16:21:57 <INFO> Reading score components from stage2_scoring.toml

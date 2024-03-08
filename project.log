@@ -1,0 +1,665 @@
+18:11:43 <INFO> Started REINVENT 4.0.28 (C) AstraZeneca 2017, 2023 on 2024-01-29
+18:11:43 <INFO> Command line: /homes/avasan/miniconda3/envs/reinvent4/bin/reinvent -l project.log configs/toml/staged_learning.toml
+18:11:43 <INFO> User avasan on host lambda0
+18:11:43 <INFO> Python version 3.10.13
+18:11:43 <INFO> PyTorch version 1.12.1+cu113, git 664058fa83f1d8eede5d66418abff6e20bd76ca8
+18:11:43 <INFO> PyTorch compiled with CUDA version 11.3
+18:11:43 <INFO> RDKit version 2022.09.5
+18:11:43 <INFO> Platform Linux-5.4.0-164-generic-x86_64-with-glibc2.31
+18:11:44 <INFO> CUDA driver version 535.104.12
+18:11:44 <INFO> Number of PyTorch CUDA devices 8
+18:11:44 <INFO> Using CUDA device:0 Tesla V100-SXM2-32GB
+18:11:44 <INFO> GPU memory: 30223 MiB free, 32501 MiB total
+18:11:44 <INFO> Writing TensorBoard summary to /lambda_stor/homes/avasan/REINVENT4/tb_logs
+18:11:44 <INFO> Writing JSON config file to /lambda_stor/homes/avasan/REINVENT4/_staged_learning.json
+18:11:44 <INFO> Starting 2 stages of Reinforcement Learning
+18:11:48 <INFO> Using generator Libinvent
+18:11:48 <INFO> Prior read from /lambda_stor/homes/avasan/REINVENT4/priors/libinvent.prior
+18:11:48 <INFO> Agent read from /lambda_stor/homes/avasan/REINVENT4/priors/libinvent.prior
+18:11:48 <INFO> Input molecules/fragments read from file configs/toml/scaffolds.smi
+18:11:48 <INFO> Using reward strategy dap
+18:11:48 <INFO> Using diversity filter IdenticalMurckoScaffold
+18:11:48 <INFO> Diversity filter memories are retained between stages
+18:11:48 <INFO> Registered scoring component ROCSSimilarity
+18:11:48 <INFO> Registered scoring component GroupCount
+18:11:48 <INFO> Registered scoring component FragmentQed
+18:11:48 <INFO> Registered scoring component FragmentSlogP
+18:11:48 <INFO> Registered scoring component FragmentMolecularWeight
+18:11:48 <INFO> Registered scoring component FragmentTPSA
+18:11:48 <INFO> Registered scoring component FragmentDistanceMatrix
+18:11:48 <INFO> Registered scoring component FragmentNumAtomStereoCenters
+18:11:48 <INFO> Registered scoring component FragmentHBondAcceptors
+18:11:48 <INFO> Registered scoring component FragmentHBondDonors
+18:11:48 <INFO> Registered scoring component FragmentNumRotBond
+18:11:48 <INFO> Registered scoring component FragmentCsp3
+18:11:48 <INFO> Registered scoring component Fragmentnumsp
+18:11:48 <INFO> Registered scoring component Fragmentnumsp2
+18:11:48 <INFO> Registered scoring component Fragmentnumsp3
+18:11:48 <INFO> Registered scoring component FragmentEffectiveLength
+18:11:48 <INFO> Registered scoring component FragmentGraphLength
+18:11:48 <INFO> Registered scoring component FragmentLengthRatio
+18:11:48 <INFO> Registered scoring component FragmentNumHeavyAtoms
+18:11:48 <INFO> Registered scoring component FragmentNumHeteroAtoms
+18:11:48 <INFO> Registered scoring component FragmentNumRings
+18:11:48 <INFO> Registered scoring component FragmentNumAromaticRings
+18:11:48 <INFO> Registered scoring component FragmentNumAliphaticRings
+18:11:48 <INFO> Registered scoring component FragmentSlogP
+18:11:48 <INFO> Registered scoring component MatchingSubstructure
+18:11:48 <INFO> Registered scoring component MolVolume
+18:11:48 <INFO> Registered scoring component Qed
+18:11:48 <INFO> Registered scoring component SlogP
+18:11:48 <INFO> Registered scoring component MolecularWeight
+18:11:48 <INFO> Registered scoring component GraphLength
+18:11:48 <INFO> Registered scoring component NumAtomStereoCenters
+18:11:48 <INFO> Registered scoring component HBondAcceptors
+18:11:48 <INFO> Registered scoring component HBondDonors
+18:11:48 <INFO> Registered scoring component NumRotBond
+18:11:48 <INFO> Registered scoring component Csp3
+18:11:48 <INFO> Registered scoring component numsp
+18:11:48 <INFO> Registered scoring component numsp2
+18:11:48 <INFO> Registered scoring component numsp3
+18:11:48 <INFO> Registered scoring component NumHeavyAtoms
+18:11:48 <INFO> Registered scoring component NumHeteroAtoms
+18:11:48 <INFO> Registered scoring component NumRings
+18:11:48 <INFO> Registered scoring component NumAromaticRings
+18:11:48 <INFO> Registered scoring component NumAliphaticRings
+18:11:48 <INFO> Registered scoring component SlogP
+18:11:48 <INFO> Registered scoring component PMI
+18:11:48 <INFO> Registered scoring component TanimotoDistance
+18:11:48 <INFO> Registered scoring component TPSA
+18:11:48 <INFO> Registered scoring component SAScore
+18:11:48 <INFO> Registered scoring component AnesthPot
+18:11:49 <INFO> Registered scoring component ChemProp
+18:11:49 <INFO> Registered scoring component CustomAlerts
+18:11:49 <INFO> Registered scoring component DockStream
+18:11:49 <INFO> Registered scoring component ExternalProcess
+18:11:49 <INFO> Registered scoring component REST
+18:11:49 <INFO> Registered scoring component Icolos
+18:11:49 <INFO> Registered scoring component LogPTest
+18:11:49 <INFO> Registered scoring component Maize
+18:11:49 <INFO> Registered scoring component MMP
+18:11:49 <INFO> Registered scoring component MMPNew
+18:11:49 <INFO> Registered scoring component Qptuna
+18:11:49 <INFO> Registered scoring component ReactionFilter
+18:11:49 <INFO> Creating filter component custom_alerts
+18:11:49 <INFO> Creating scoring component MolecularWeight
+18:11:49 <INFO> Reading score components from configs/toml/stage2_scoring.toml
+18:11:49 <INFO> Registered scoring component ROCSSimilarity
+18:11:49 <INFO> Registered scoring component GroupCount
+18:11:49 <INFO> Registered scoring component FragmentQed
+18:11:49 <INFO> Registered scoring component FragmentSlogP
+18:11:49 <INFO> Registered scoring component FragmentMolecularWeight
+18:11:49 <INFO> Registered scoring component FragmentTPSA
+18:11:49 <INFO> Registered scoring component FragmentDistanceMatrix
+18:11:49 <INFO> Registered scoring component FragmentNumAtomStereoCenters
+18:11:49 <INFO> Registered scoring component FragmentHBondAcceptors
+18:11:49 <INFO> Registered scoring component FragmentHBondDonors
+18:11:49 <INFO> Registered scoring component FragmentNumRotBond
+18:11:49 <INFO> Registered scoring component FragmentCsp3
+18:11:49 <INFO> Registered scoring component Fragmentnumsp
+18:11:49 <INFO> Registered scoring component Fragmentnumsp2
+18:11:49 <INFO> Registered scoring component Fragmentnumsp3
+18:11:49 <INFO> Registered scoring component FragmentEffectiveLength
+18:11:49 <INFO> Registered scoring component FragmentGraphLength
+18:11:49 <INFO> Registered scoring component FragmentLengthRatio
+18:11:49 <INFO> Registered scoring component FragmentNumHeavyAtoms
+18:11:49 <INFO> Registered scoring component FragmentNumHeteroAtoms
+18:11:49 <INFO> Registered scoring component FragmentNumRings
+18:11:49 <INFO> Registered scoring component FragmentNumAromaticRings
+18:11:49 <INFO> Registered scoring component FragmentNumAliphaticRings
+18:11:49 <INFO> Registered scoring component FragmentSlogP
+18:11:49 <INFO> Registered scoring component MatchingSubstructure
+18:11:49 <INFO> Registered scoring component MolVolume
+18:11:49 <INFO> Registered scoring component Qed
+18:11:49 <INFO> Registered scoring component SlogP
+18:11:49 <INFO> Registered scoring component MolecularWeight
+18:11:49 <INFO> Registered scoring component GraphLength
+18:11:49 <INFO> Registered scoring component NumAtomStereoCenters
+18:11:49 <INFO> Registered scoring component HBondAcceptors
+18:11:49 <INFO> Registered scoring component HBondDonors
+18:11:49 <INFO> Registered scoring component NumRotBond
+18:11:49 <INFO> Registered scoring component Csp3
+18:11:49 <INFO> Registered scoring component numsp
+18:11:49 <INFO> Registered scoring component numsp2
+18:11:49 <INFO> Registered scoring component numsp3
+18:11:49 <INFO> Registered scoring component NumHeavyAtoms
+18:11:49 <INFO> Registered scoring component NumHeteroAtoms
+18:11:49 <INFO> Registered scoring component NumRings
+18:11:49 <INFO> Registered scoring component NumAromaticRings
+18:11:49 <INFO> Registered scoring component NumAliphaticRings
+18:11:49 <INFO> Registered scoring component SlogP
+18:11:49 <INFO> Registered scoring component PMI
+18:11:49 <INFO> Registered scoring component TanimotoDistance
+18:11:49 <INFO> Registered scoring component TPSA
+18:11:49 <INFO> Registered scoring component SAScore
+18:11:49 <INFO> Registered scoring component AnesthPot
+18:11:49 <INFO> Registered scoring component ChemProp
+18:11:49 <INFO> Registered scoring component CustomAlerts
+18:11:49 <INFO> Registered scoring component DockStream
+18:11:49 <INFO> Registered scoring component ExternalProcess
+18:11:49 <INFO> Registered scoring component REST
+18:11:49 <INFO> Registered scoring component Icolos
+18:11:49 <INFO> Registered scoring component LogPTest
+18:11:49 <INFO> Registered scoring component Maize
+18:11:49 <INFO> Registered scoring component MMP
+18:11:49 <INFO> Registered scoring component MMPNew
+18:11:49 <INFO> Registered scoring component Qptuna
+18:11:49 <INFO> Registered scoring component ReactionFilter
+18:11:49 <INFO> Calculating AP using Chandler Brady's script
+18:11:49 <INFO> Creating scoring component AnesthPot
+18:11:49 <INFO> Writing tabular data for stage to staged_learning_1.csv
+18:11:49 <INFO> Starting stage 1 <<<
+18:11:49 <INFO> Current GPU memory usage: 3552 MiB used, 28949 MiB free
+18:11:52 <INFO> Score: 0.87 Agent NLL: 22.34 Valid: 100% Step: 1
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 21.8122 21.8867 106.1099 0.9999735 [CH3:0][CH2:0]c1cncc2ncc([CH2:1][CH2:1]CCNC(=O)CCNC)cc12 c1cnc2cnccc2c1 0.9999735 314.4330 1.0000000 1.0000
+ | 34.2384 33.7697 94.0182 0.9983427 [CH3:0][CH2:0]c1cncc2ncc([CH2:1][NH:1]Cc3cnc(C(O)C4CNCC(F)(F)C4)n3C)cc12 c1cc2cc([CH2:1][NH:1]Cc3cnc(CC4CCCNC4)[nH]3)cnc2cn1 0.9983427 430.5030 1.0000000 1.0000
+ | 48.5806 47.4334 -47.4334 0.0000000 [CH3:0][CH2:0]c1cncc2ncc([CH2:1][NH:1]CCCN3CCC(C(=O)NCCCc4cccc(C(=O)NCc5ccc(Cl)c(Cl)c5)c4)CC3C(=O)O)cc12 O=C(NCc1ccccc1)c1cccc(CCCNC(=O)C2CCN(CCC[NH:1][CH2:1]c3cnc4cnccc4c3)CC2)c1 0.0000000 719.7140 0.0000000 0.0000
+ | 26.0637 25.6462 102.2519 0.9992039 COc1cc(C(=O)NCC[N:1](C)[CH2:1]c2cnc3cncc([CH2:0][N:0](C)C)c3c2)ncc1C O=C(NCC[NH:1][CH2:1]c1cnc2cnccc2c1)c1ccccn1 0.9992039 422.5330 1.0000000 1.0000
+ | 20.5452 20.5854 107.4142 0.9999965 CC(C)NC(=O)c1cc[c:1]([CH2:1]c2cnc3cncc([CH2:0][N:0](C)C)c3c2)cc1 c1cc[c:1]([CH2:1]c2cnc3cnccc3c2)cc1 0.9999965 362.4770 1.0000000 1.0000
+ | 17.2346 16.5518 111.4199 0.9997787 NCC[NH:0][CH2:0]c1cncc2ncc([CH2:1][NH:1]CCCF)cc12 c1cnc2cnccc2c1 0.9997787 291.3740 1.0000000 1.0000
+ | 36.3545 33.8215 88.0722 0.9522942 O=c1cc(C[NH:0][CH2:0]c2cncc3ncc([CH2:1][NH:1]CCC(F)(F)F)cc23)cc(-c2ccccc2)[nH]1 O=c1cc(C[NH:0][CH2:0]c2cncc3ncccc23)cc(-c2ccccc2)[nH]1 0.9522942 467.4950 1.0000000 1.0000
+ | 22.1213 20.9919 107.0062 0.9999849 CCNc1ccc(C(=O)NCC[O:1][CH2:1]c2cnc3cncc([CH2:0][NH2:0])c3c2)cc1 O=C(NCC[O:1][CH2:1]c1cnc2cnccc2c1)c1ccccc1 0.9999849 379.4640 1.0000000 1.0000
+ | 23.6451 24.0938 103.9034 0.9999781 O=S(=O)(O)c1ccc[c:0]([CH2:0]c2cncc3ncc([CH2:1][N:1]4CCCC4)cc23)c1 c1cc[c:0]([CH2:0]c2cncc3ncc([CH2:1][N:1]4CCCC4)cc23)cc1 0.9999781 383.4730 1.0000000 1.0000
+ | 30.1529 28.1507 64.4017 0.7230653 C[NH:1][CH2:1]c1cnc2cncc([CH2:0][CH2:0]CNC(=O)NCC(O)COc3cccc4ccnc(N)c34)c2c1 O=C(NCCCOc1cccc2ccncc12)NC[CH2:0][CH2:0]c1cncc2ncccc12 0.7230653 489.5800 1.0000000 1.0000
+18:11:55 <INFO> Score: 0.88 Agent NLL: 21.75 Valid:  98% Step: 2
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 26.5052 26.5626 101.4361 0.9999902 Cn1nnc([CH2:1][CH2:1]c2cncc3ccc([CH2:0][CH2:0]C(=O)O)cc23)c1N c1ccc2c([CH2:1][CH2:1]c3c[nH]nn3)cncc2c1 0.9999902 325.3720 0.0000000 0.0000
+ | 17.3680 16.9625 111.0372 0.9999979 CNC(=O)NC(=O)[CH2:0][CH2:0]c1ccc2cncc([CH2:1][c:1]3ccccc3)c2c1 c1cc[c:1]([CH2:1]c2cncc3ccccc23)cc1 0.9999979 347.4180 1.0000000 1.0000
+ | 40.9423 38.8916 32.1358 0.5549017 c1ccc([CH2:1][CH2:1]c2cncc3ccc([CH2:0][CH2:0]Cc4cnc(-c5ncccn5)c(-c5ccn[nH]5)n4)cc23)cc1 c1ccc([CH2:1][CH2:1]c2cncc3ccc([CH2:0][CH2:0]Cc4cnc(-c5ncccn5)c(-c5ccn[nH]5)n4)cc23)cc1 0.5549017 497.6060 1.0000000 1.0000
+ | 53.1732 53.1723 -53.1633 0.0000703 [CH3:0][CH2:0]c1ccc2cncc([CH2:1][NH:1]CCSCC(=O)NCCSC(Cc3ccccc3)C(=O)OCS(C)(=O)=O)c2c1 O=C(CSCC[NH:1][CH2:1]c1cncc2ccccc12)NCCSCCc1ccccc1 0.0000703 603.8320 0.0000000 0.0000
+ | 11.7498 9.9435 114.7112 0.9738652 [CH3:0][CH2:0]c1ccc2cncc([CH2:1][c:1]3nnn[nH]3)c2c1 c1ccc2c([CH2:1][c:1]3nnn[nH]3)cncc2c1 0.9738652 239.2820 1.0000000 1.0000
+ | 22.3911 22.0572 105.9364 0.9999502 NS(=O)(=O)Oc1ccc([CH2:0][CH2:0]c2ccc3cncc([CH2:1][CH:1](F)F)c3c2)cc1 c1ccc([CH2:0][CH2:0]c2ccc3cnccc3c2)cc1 0.9999502 392.4270 1.0000000 1.0000
+ | 10.4099 11.5266 116.4713 0.9999832 O=C(O)CC[CH2:0][CH2:0]c1ccc2cncc([CH2:1][c:1]3ccccc3)c2c1 c1cc[c:1]([CH2:1]c2cncc3ccccc23)cc1 0.9999832 319.4040 0.0000000 0.0000
+ | 11.8207 10.3753 101.7821 0.8762293 [CH3:0][CH2:0]c1ccc2cncc([CH2:1][CH:1](F)F)c2c1 c1ccc2cnccc2c1 0.8762293 221.2500 1.0000000 1.0000
+ | 7.7197 7.5276 20.6320 0.2199968 [CH3:0][CH2:0]c1ccc2cncc([CH2:1][NH2:1])c2c1 c1ccc2cnccc2c1 0.2199968 186.2580 1.0000000 1.0000
+ | 32.5121 30.9334 96.9823 0.9993416 O=C1C2CC3(CNC3=O)C2C(=O)[N:0]1[CH2:0]c1ccc2cncc([CH2:1][N:1]3CCOCC3)c2c1 O=C1C2CC3(CNC3=O)C2C(=O)[N:0]1[CH2:0]c1ccc2cncc([CH2:1][N:1]3CCOCC3)c2c1 0.9993416 420.4690 1.0000000 1.0000
+18:11:58 <INFO> Score: 0.92 Agent NLL: 21.27 Valid:  99% Step: 3
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 18.2778 19.8605 108.1392 0.9999980 CC[CH2:0][CH2:0]c1cncc2ncc([CH2:1][c:1]3ccc(CCC(=O)O)cc3)cc12 c1cc[c:1]([CH2:1]c2cnc3cnccc3c2)cc1 0.9999980 348.4460 0.0000000 0.0000
+ | 11.9915 10.5233 117.4761 0.9999956 NCCCNC[CH2:0][CH2:0]c1cncc2ncc([CH2:1][c:1]3ccccc3)cc12 c1cc[c:1]([CH2:1]c2cnc3cnccc3c2)cc1 0.9999956 334.4670 1.0000000 1.0000
+ | 22.6254 20.2253 107.7737 0.9999926 CNC[CH2:0][CH2:0]c1cncc2ncc([CH2:1][CH2:1]CN3CCN(CCO)CC3)cc12 c1cc2cc([CH2:1][CH2:1]CN3CCNCC3)cnc2cn1 0.9999926 371.5290 1.0000000 1.0000
+ | 12.4954 11.5018 116.4491 0.9996163 NC[CH2:0][CH2:0]c1cncc2ncc([CH2:1][N:1]3CCNCC3)cc12 c1cc2cc([CH2:1][N:1]3CCNCC3)cnc2cn1 0.9996163 285.3950 1.0000000 1.0000
+ | 30.2577 27.9905 99.4242 0.9954277 CS(=O)(=O)OCCC(=O)NC[CH2:1][CH2:1]c1cnc2cncc([CH2:0][CH2:0]c3ccccc3)c2c1 c1ccc([CH2:0][CH2:0]c2cncc3ncccc23)cc1 0.9954277 441.5530 1.0000000 1.0000
+ | 8.2291 9.0632 19.0964 0.2199968 [CH3:0][CH2:0]c1cncc2ncc([CH2:1][CH3:1])cc12 c1cnc2cnccc2c1 0.2199968 186.2580 1.0000000 1.0000
+ | 16.1392 14.6159 113.3830 0.9999919 [CH3:0][CH2:0]c1cncc2ncc([CH2:1][NH:1]S(=O)(=O)c3ccccc3)cc12 O=S(=O)(c1ccccc1)[NH:1][CH2:1]c1cnc2cnccc2c1 0.9999919 327.4090 1.0000000 1.0000
+ | 12.4926 11.4476 116.4585 0.9992664 [CH3:0][CH2:0]c1cncc2ncc([CH2:1][c:1]3cccc(OC)c3)cc12 c1cc[c:1]([CH2:1]c2cnc3cnccc3c2)cc1 0.9992664 278.3550 1.0000000 1.0000
+ | 15.2500 14.9401 113.0439 0.9998748 [CH3:0][CH2:0]c1cncc2ncc([CH2:1][NH:1]C3CCN(S(=O)(=O)C(F)(F)F)CC3)cc12 c1cc2cc([CH2:1][NH:1]C3CCNCC3)cnc2cn1 0.9998748 402.4420 1.0000000 1.0000
+ | 8.7469 10.5868 54.2532 0.5065620 [CH3:0][CH2:0]c1cncc2ncc([CH2:1][CH2:1]C)cc12 c1cnc2cnccc2c1 0.5065620 200.2850 1.0000000 1.0000
+18:12:01 <INFO> Score: 0.77 Agent NLL: 19.28 Valid:  99% Step: 4
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 9.8691 9.4364 -9.4364 0.0000000 O=C(O)[CH2:0][CH2:0]c1ccc2cncc([CH2:1][CH3:1])c2c1 c1ccc2cnccc2c1 0.9368314 229.2790 0.0000000 0.0000
+ | 9.7482 9.1697 -9.1697 0.0000000 O=C(O)CC[CH2:0][CH2:0]c1ccc2cncc([CH2:1][c:1]3ccccc3)c2c1 c1cc[c:1]([CH2:1]c2cncc3ccccc23)cc1 0.9999832 319.4040 0.0000000 0.0000
+ | 15.8827 18.5870 109.3485 0.9994959 c1cc2cncc([CH2:1][CH3:1])c2cc1[CH2:0][CH2:0]CCNC1CCC1 c1cc2cc([CH2:0][CH2:0]CCNC3CCC3)ccc2cn1 0.9994959 282.4310 1.0000000 1.0000
+ | 13.1898 14.4106 112.9412 0.9949362 C[CH2:0][CH2:0]c1ccc2cncc([CH2:1][CH2:1]CC(=O)O)c2c1 c1ccc2cnccc2c1 0.9949362 257.3330 0.0000000 0.0000
+ | 6.6148 6.2409 19.9709 0.2047799 [CH3:0][CH2:0]c1ccc2cncc([CH2:1][CH3:1])c2c1 c1ccc2cnccc2c1 0.2047799 185.2700 1.0000000 1.0000
+ | 12.2499 10.6578 115.0141 0.9818119 [CH3:0][CH2:0]c1ccc2cncc([CH2:1][CH:1](C)C(=O)O)c2c1 c1ccc2cnccc2c1 0.9818119 243.3060 0.0000000 0.0000
+ | 7.5111 9.2119 52.7169 0.4838185 [CH3:0][CH2:0]c1ccc2cncc([CH2:1][CH2:1]C)c2c1 c1ccc2cnccc2c1 0.4838185 199.2970 1.0000000 1.0000
+ | 7.7712 8.6122 92.3643 0.7888794 [CH3:0][CH2:0]c1ccc2cncc([CH2:1][CH2:1]CN)c2c1 c1ccc2cnccc2c1 0.7888794 214.3120 1.0000000 1.0000
+ | 27.0457 28.2413 -28.2413 0.0000000 [CH3:0][CH2:0]c1ccc2cncc([CH2:1][CH2:1]CC(N)(CC)CN)c2c1 c1ccc2cnccc2c1 0.9996177 285.4350 1.0000000 1.0000
+ | 16.0281 16.0863 111.9052 0.9999335 CCNCc1ccc[c:1]([CH2:1]c2cncc3ccc([CH2:0][CH3:0])cc23)c1 c1cc[c:1]([CH2:1]c2cncc3ccccc23)cc1 0.9999335 304.4370 1.0000000 1.0000
+18:12:03 <INFO> Score: 0.77 Agent NLL: 17.69 Valid: 100% Step: 5
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 27.5746 27.7885 99.4099 0.9937369 O=S(=O)(c1ccc(Cl)cc1)[NH:1][CH2:1]c1cnc2cncc([CH2:0][CH:0]3CCCNCC3)c2c1 O=S(=O)(c1ccccc1)[NH:1][CH2:1]c1cnc2cncc([CH2:0][CH:0]3CCCNCC3)c2c1 0.9937369 444.9880 1.0000000 1.0000
+ | 30.5694 30.8270 -30.8270 0.0000000 CC[CH:1](CC(C)=O)[CH2:1]c1cnc2cncc([CH2:0][CH2:0]C(=O)O)c2c1 c1cnc2cnccc2c1 0.9999734 314.3850 0.0000000 0.0000
+ | 10.3656 12.2038 115.6006 0.9984720 NC[CH2:0][CH2:0]c1cncc2ncc([CH2:1][N:1]3CCCC3)cc12 c1cc2cc([CH2:1][N:1]3CCCC3)cnc2cn1 0.9984720 270.3800 1.0000000 1.0000
+ | 13.4874 14.4207 -14.4207 0.0000000 C[CH2:0][CH2:0]c1cncc2ncc([CH2:1][CH2:1]CN)cc12 c1cnc2cnccc2c1 0.9370925 229.3270 1.0000000 1.0000
+ | 13.2009 15.4844 112.4618 0.9995797 C[CH2:0][CH2:0]c1cncc2ncc([CH2:1][N:1]3CCC(N)CC3)cc12 c1cc2cc([CH2:1][N:1]3CCCCC3)cnc2cn1 0.9995797 284.4070 1.0000000 1.0000
+ | 11.7998 12.3887 -12.3887 0.0000000 [CH3:0][CH2:0]c1cncc2ncc([CH2:1][CH2:1]CNCCCO)cc12 c1cnc2cnccc2c1 0.9988405 273.3800 1.0000000 1.0000
+ | 14.4513 11.5119 116.4229 0.9994906 [CH3:0][CH2:0]c1cncc2ncc([CH2:1][O:1]c3ccc(F)cc3)cc12 c1ccc([O:1][CH2:1]c2cnc3cnccc3c2)cc1 0.9994906 282.3180 1.0000000 1.0000
+ | 12.4921 12.9502 115.0461 0.9999710 [CH3:0][CH2:0]c1cncc2ncc([CH2:1][N:1]3CCC(NCCN)CC3)cc12 c1cc2cc([CH2:1][N:1]3CCCCC3)cnc2cn1 0.9999710 313.4490 1.0000000 1.0000
+ | 9.7107 10.1310 -10.1310 0.0000000 [CH3:0][CH2:0]c1cncc2ncc([CH2:1][NH:1]CCNC)cc12 c1cnc2cnccc2c1 0.9834397 244.3420 1.0000000 1.0000
+ | 16.3204 17.1751 110.8071 0.9998609 [CH3:0][CH2:0]c1cncc2ncc([CH2:1][N:1]3CCC4CNCC4C3)cc12 c1cc2cc([CH2:1][N:1]3CCC4CNCC4C3)cnc2cn1 0.9998609 296.4180 1.0000000 1.0000
+18:12:05 <INFO> Score: 0.85 Agent NLL: 21.95 Valid: 100% Step: 6
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 31.9135 32.4487 95.5425 0.9999312 CC[C:1](O)(c1ccc(Cl)cc1)[CH2:1]c1cncc2ncc([CH2:0][C:0]3(CN)CC3)cc12 c1ccc([CH2:1][CH2:1]c2cncc3ncc([CH2:0][CH:0]4CC4)cc23)cc1 0.9999312 395.9340 1.0000000 1.0000
+ | 17.3402 17.6046 110.3942 0.9999912 c1nc2cncc([CH2:1][CH3:1])c2cc1[CH2:0][CH2:0]CNCCCNCC1CC1 c1cc2cc([CH2:0][CH2:0]CNCCCNCC3CC3)cnc2cn1 0.9999912 326.4880 1.0000000 1.0000
+ | 18.5355 21.4398 106.5599 0.9999977 [CH3:0][CH2:0]c1cnc2cncc([CH2:1][NH:1]CCCCN3CCNC(=O)CC3)c2c1 O=C1CCN(CCCC[NH:1][CH2:1]c2cncc3ncccc23)CCN1 0.9999977 355.4860 1.0000000 1.0000
+ | 13.3006 16.0307 111.9558 0.9998945 [CH3:0][CH2:0]c1cnc2cncc([CH2:1][O:1]CC3CCN(C)CC3)c2c1 c1cnc2cncc([CH2:1][O:1]CC3CCNCC3)c2c1 0.9998945 299.4180 1.0000000 1.0000
+ | 25.5808 23.5411 104.4203 0.9996986 CC[N:0](CCN(C)C)[CH2:0]c1cnc2cncc([CH2:1][NH:1]Cc3ccccc3Cl)c2c1 c1ccc(C[NH:1][CH2:1]c2cncc3ncccc23)cc1 0.9996986 411.9810 1.0000000 1.0000
+ | 38.3806 35.9333 90.8395 0.9904127 CN1CC2CC(C1)[N:0]([CH2:0]c1cnc3cncc([CH2:1][NH:1]CC4CCN5CCN(C)CC45)c3c1)C2 c1nc2cncc([CH2:1][NH:1]CC3CCN4CCNCC34)c2cc1[CH2:0][N:0]1CC2CNCC1C2 0.9904127 449.6470 1.0000000 1.0000
+ | 16.0871 17.2487 110.7495 0.9999860 Fc1ccc[c:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCCC4)cc23)c1 c1cc[c:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCCC4)cc23)cc1 0.9999860 321.3990 1.0000000 1.0000
+ | 17.5908 18.7138 109.2855 0.9999948 c1nc2cncc([CH2:1][NH:1]CCN3CCCCCC3)c2cc1[CH2:0][N:0]1CCCC1 c1nc2cncc([CH2:1][NH:1]CCN3CCCCCC3)c2cc1[CH2:0][N:0]1CCCC1 0.9999948 367.5410 1.0000000 1.0000
+ | 16.6504 20.2065 -20.2065 0.0000000 NCCC[NH:0][CH2:0]c1cnc2cncc([CH2:1][CH2:1]CC(=O)O)c2c1 c1cnc2cnccc2c1 0.9999197 302.3780 0.0000000 0.0000
+ | 35.7217 36.9702 89.1083 0.9849883 O=C(O)CC1C[N:0]([CH2:0]c2cnc3cncc([CH2:1][NH:1]C4CN5CCCC5CN4CCO)c3c2)C1 c1nc2cncc([CH2:1][NH:1]C3CN4CCCC4CN3)c2cc1[CH2:0][N:0]1CCC1 0.9849883 454.5750 0.0000000 0.0000
+18:12:08 <INFO> Score: 0.81 Agent NLL: 18.26 Valid: 100% Step: 7
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 28.5759 29.5063 98.3592 0.9989488 CCCC(=O)NS(=O)(=O)c1ccc[c:1]([CH2:1]c2ccc3cncc([CH2:0][CH2:0]CN)c3c2)c1 c1cc[c:1]([CH2:1]c2ccc3cnccc3c2)cc1 0.9989488 425.5540 1.0000000 1.0000
+ | 22.4745 22.5772 105.4014 0.9998332 C[CH2:0][CH2:0]c1cncc2ccc([CH2:1][C:1]34CCC(CCN3)C4)cc12 c1cc2cc([CH2:1][C:1]34CCC(CCN3)C4)ccc2cn1 0.9998332 294.4420 1.0000000 1.0000
+ | 34.3173 37.8455 7.0273 0.3505687 C[CH2:0][CH2:0]c1cncc2ccc([CH2:1][NH:1]C3(C(=O)NCc4ccc(-c5ccccc5C)cc4)CCCNC3)cc12 O=C(NCc1ccc(-c2ccccc2)cc1)C1([NH:1][CH2:1]c2ccc3cnccc3c2)CCCNC1 0.3505687 506.6940 1.0000000 1.0000
+ | 8.6725 7.6324 18.5795 0.2047799 [CH3:0][CH2:0]c1cncc2ccc([CH2:1][CH3:1])cc12 c1ccc2cnccc2c1 0.2047799 185.2700 1.0000000 1.0000
+ | 18.1928 19.9218 108.0776 0.9999952 [CH3:0][CH2:0]c1cncc2ccc([CH2:1][CH2:1]CCc3ccc(C(=O)O)cc3)cc12 c1ccc(CC[CH2:1][CH2:1]c2ccc3cnccc3c2)cc1 0.9999952 333.4310 0.0000000 0.0000
+ | 29.9513 22.2854 105.1807 0.9958292 [CH3:0][CH2:0]c1cncc2ccc([CH2:1][N:1]3CCN(C(=O)c4nn(-c5ccccc5)nc4C)CC3)cc12 O=C(c1cnn(-c2ccccc2)n1)N1CC[N:1]([CH2:1]c2ccc3cnccc3c2)CC1 0.9958292 440.5510 1.0000000 1.0000
+ | 26.9075 34.0732 0.8715 0.2730054 [CH3:0][CH2:0]c1cncc2ccc([CH2:1][O:1]c3cc4ccccc4cc3C(=O)N3CCC(CCCC(=O)O)CC3)cc12 O=C(c1cc2ccccc2cc1[O:1][CH2:1]c1ccc2cnccc2c1)N1CCCCC1 0.2730054 510.6340 0.0000000 0.0000
+ | 19.8719 24.2946 -24.2946 0.0000000 [CH3:0][CH2:0]c1cncc2ccc([CH2:1][C:1](C)(N)CNC(C)=O)cc12 c1ccc2cnccc2c1 0.9996161 285.3910 1.0000000 1.0000
+ | 12.5084 16.2916 111.7063 0.9999832 [CH3:0][CH2:0]c1cncc2ccc([CH2:1][CH2:1]c3ccc(CC(=O)O)cc3)cc12 c1ccc([CH2:1][CH2:1]c2ccc3cnccc3c2)cc1 0.9999832 319.4040 0.0000000 0.0000
+ | 12.7027 10.7782 -10.7782 0.0000000 OCC[NH:0][CH2:0]c1cncc2ccc([CH2:1][NH2:1])cc12 c1ccc2cnccc2c1 0.9469868 231.2990 1.0000000 1.0000
+18:12:10 <INFO> Score: 0.86 Agent NLL: 18.07 Valid: 100% Step: 8
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 5.9179 5.3235 20.8883 0.2047799 [CH3:0][CH2:0]c1cncc2ccc([CH2:1][CH3:1])cc12 c1ccc2cnccc2c1 0.2047799 185.2700 1.0000000 1.0000
+ | 19.3375 18.3855 109.6141 0.9999968 CCCCCC1CNS(=O)(=O)[N:1]1[CH2:1]c1ccc2cncc([CH2:0][CH3:0])c2c1 O=S1(=O)NCC[N:1]1[CH2:1]c1ccc2cnccc2c1 0.9999968 361.5110 1.0000000 1.0000
+ | 16.7724 19.1625 -19.1625 0.0000000 [CH3:0][CH2:0]c1cncc2ccc([CH2:1][NH:1]CCN=C(C)N)cc12 c1ccc2cnccc2c1 0.9984720 270.3800 1.0000000 1.0000
+ | 11.9294 12.0514 115.0186 0.9927344 [CH3:0][CH2:0]c1cncc2ccc([CH2:1][CH:1]3CCCCC3)cc12 c1cc2cc([CH2:1][CH:1]3CCCCC3)ccc2cn1 0.9927344 253.3890 1.0000000 1.0000
+ | 16.6987 17.2086 110.7908 0.9999948 [CH3:0][CH2:0]c1cncc2ccc([CH2:1][N:1]3CCC(S(C)(=O)=O)CC3)cc12 c1cc2cc([CH2:1][N:1]3CCCCC3)ccc2cn1 0.9999948 332.4690 1.0000000 1.0000
+ | 11.4801 12.4577 -12.4577 0.0000000 [CH3:0][CH2:0]c1cncc2ccc([CH2:1][CH2:1]CC(=O)O)cc12 c1ccc2cnccc2c1 0.9818119 243.3060 0.0000000 0.0000
+ | 16.8934 16.5701 111.2326 0.9984590 [CH3:0][CH2:0]c1cncc2ccc([CH2:1][N:1]3CC(=O)OC3=O)cc12 O=C1C[N:1]([CH2:1]c2ccc3cnccc3c2)C(=O)O1 0.9984590 270.2880 0.0000000 0.0000
+ | 16.7565 15.8045 112.1807 0.9998840 [CH3:0][CH2:0]c1cncc2ccc([CH2:1][c:1]3ccc4ccccc4n3)cc12 c1ccc2n[c:1]([CH2:1]c3ccc4cnccc4c3)ccc2c1 0.9998840 298.3890 1.0000000 1.0000
+ | 12.2005 15.7356 112.2629 0.9999884 [CH3:0][CH2:0]c1cncc2ccc([CH2:1][c:1]3ccc(-c4ccccc4)cc3)cc12 c1ccc(-c2cc[c:1]([CH2:1]c3ccc4cnccc4c3)cc2)cc1 0.9999884 323.4390 1.0000000 1.0000
+ | 15.1838 17.0245 110.9749 0.9999955 Clc1cccc[c:0]1[CH2:0]c1cncc2ccc([CH2:1][N:1]3CCCNCC3)cc12 c1cc[c:0]([CH2:0]c2cncc3ccc([CH2:1][N:1]4CCCNCC4)cc23)cc1 0.9999955 365.9080 1.0000000 1.0000
+18:12:12 <INFO> Score: 0.87 Agent NLL: 20.19 Valid:  99% Step: 9
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 30.9930 37.9351 75.6809 0.8876250 CC(C)C(NC(=O)c1ccc(C[CH2:1][CH2:1]c2cnc3cncc([CH2:0][CH2:0]CC(=O)O)c3c2)cc1)C(=O)O c1ccc(C[CH2:1][CH2:1]c2cnc3cnccc3c2)cc1 0.8876250 477.5610 0.0000000 0.0000
+ | 14.2243 14.1493 -14.1493 0.0000000 NC[CH2:0][CH2:0]c1cncc2ncc([CH2:1][CH:1](F)F)cc12 c1cnc2cnccc2c1 0.9911904 251.2800 1.0000000 1.0000
+ | 13.5872 14.5899 -14.5899 0.0000000 [CH3:0][CH2:0]c1cncc2ncc([CH2:1][NH:1]CCNCCO)cc12 c1cnc2cnccc2c1 0.9989412 274.3680 1.0000000 1.0000
+ | 27.2790 29.7339 98.2466 0.9998482 O=S1(=O)CCC(C[O:1][CH2:1]c2cnc3cncc([CH2:0][N:0]4CCCNCC4)c3c2)C1 O=S1(=O)CCC(C[O:1][CH2:1]c2cnc3cncc([CH2:0][N:0]4CCCNCC4)c3c2)C1 0.9998482 404.5360 1.0000000 1.0000
+ | 13.1750 15.1689 -15.1689 0.0000000 NCCCC[NH:0][CH2:0]c1cncc2ncc([CH2:1][CH3:1])cc12 c1cnc2cnccc2c1 0.9953949 258.3690 1.0000000 1.0000
+ | 11.4860 12.2775 115.5439 0.9986047 [NH2:0][CH2:0]c1cncc2ncc([CH2:1][N:1]3CCCNCC3)cc12 c1cc2cc([CH2:1][N:1]3CCCNCC3)cnc2cn1 0.9986047 271.3680 1.0000000 1.0000
+ | 19.9663 23.3385 104.6613 0.9999978 C[CH2:0][CH2:0]c1cncc2ncc([CH2:1][NH:1]CCNc3ccc(Cl)cc3)cc12 c1ccc(NCC[NH:1][CH2:1]c2cnc3cnccc3c2)cc1 0.9999978 354.8850 1.0000000 1.0000
+ | 27.7272 32.5343 -32.5343 0.0000000 NCCC[CH2:0][CH2:0]c1cncc2ncc([CH2:1][CH2:1]CCC(=O)NCCN)cc12 c1cnc2cnccc2c1 0.9999975 357.5020 1.0000000 1.0000
+ | 22.9788 36.5334 91.2340 0.9981826 NCCC[NH:0][CH2:0]c1cncc2ncc([CH2:1][CH2:1]CNCc3ccccc3C(F)(F)F)cc12 c1ccc(CNC[CH2:1][CH2:1]c2cnc3cnccc3c2)cc1 0.9981826 431.5060 1.0000000 1.0000
+ | 15.0077 17.5448 -17.5448 0.0000000 NCC[CH2:0][CH2:0]c1cncc2ncc([CH2:1][CH2:1]CO)cc12 c1cnc2cnccc2c1 0.9957923 259.3530 1.0000000 1.0000
+18:12:14 <INFO> Score: 0.89 Agent NLL: 19.17 Valid:  98% Step: 10
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 16.3168 15.4792 112.4563 0.9994959 C[CH2:0][CH2:0]c1ccc2cncc([CH2:1][CH:1]3CCC(N)CC3)c2c1 c1ccc2c([CH2:1][CH:1]3CCCCC3)cncc2c1 0.9994959 282.4310 1.0000000 1.0000
+ | 17.0193 16.0512 -16.0512 0.0000000 [CH3:0][CH2:0]c1ccc2cncc([CH2:1][NH:1]C(C)CN)c2c1 c1ccc2cnccc2c1 0.9818906 243.3540 1.0000000 1.0000
+ | 9.1552 7.0971 19.1147 0.2047799 [CH3:0][CH2:0]c1ccc2cncc([CH2:1][CH3:1])c2c1 c1ccc2cnccc2c1 0.2047799 185.2700 1.0000000 1.0000
+ | 12.4511 11.1399 116.8593 0.9999938 c1cc[c:1]([CH2:1]c2cncc3ccc([CH2:0][N:0]4CCCCCC4)cc23)cc1 c1cc[c:1]([CH2:1]c2cncc3ccc([CH2:0][N:0]4CCCCCC4)cc23)cc1 0.9999938 330.4750 1.0000000 1.0000
+ | 13.0203 14.9625 113.0371 0.9999968 NC(=O)c1cc[c:0]([CH2:0]c2ccc3cncc([CH2:1][N:1]4CCOCC4)c3c2)cc1 c1cc[c:0]([CH2:0]c2ccc3cncc([CH2:1][N:1]4CCOCC4)c3c2)cc1 0.9999968 361.4450 1.0000000 1.0000
+ | 25.4541 30.5529 97.3981 0.9996173 C#CC[N:0](C)[CH2:0]c1ccc2cncc([CH2:1][CH2:1]CS(=O)(=O)N3CCN(C)CC3)c2c1 O=S(=O)(C[CH2:1][CH2:1]c1cncc2ccccc12)N1CCNCC1 0.9996173 414.5750 0.0000000 0.0000
+ | 19.8339 22.2445 105.7549 0.9999956 CC[CH2:1][CH2:1]c1cncc2ccc([CH2:0][NH:0]C(CO)c3ccccc3)cc12 c1ccc(C[NH:0][CH2:0]c2ccc3cnccc3c2)cc1 0.9999956 334.4630 1.0000000 1.0000
+ | 24.4679 26.9818 100.9843 0.9997355 O=S(=O)(CC1=NCCS1)c1cc[c:0]([CH2:0]c2ccc3cncc([CH2:1][CH3:1])c3c2)cc1 O=S(=O)(CC1=NCCS1)c1cc[c:0]([CH2:0]c2ccc3cnccc3c2)cc1 0.9997355 410.5640 1.0000000 1.0000
+ | 16.2661 18.9563 109.0424 0.9999894 c1cc2cncc([CH2:1][N:1]3CCOCC3)c2cc1[CH2:0][CH2:0]C1CCCC1 c1cc2cncc([CH2:1][N:1]3CCOCC3)c2cc1[CH2:0][CH2:0]C1CCCC1 0.9999894 324.4680 1.0000000 1.0000
+ | 29.7447 34.6015 68.2863 0.8038113 C[N:0]([CH2:0]c1ccc2cncc([CH2:1][CH:1]3CCNC3)c2c1)CC1CCC(NC(=O)Cc2ccccc2)CC1 O=C(Cc1ccccc1)NC1CCC(C[NH:0][CH2:0]c2ccc3cncc([CH2:1][CH:1]4CCNC4)c3c2)CC1 0.8038113 484.6880 1.0000000 1.0000
+18:12:15 <INFO> Score: 0.81 Agent NLL: 19.66 Valid:  99% Step: 11
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 36.4565 40.1772 87.8197 0.9999759 NC[CH2:0][CH2:0]c1cncc2ccc([CH2:1][CH:1](CCCC3(N)CCC3N)C(=O)O)cc12 c1cc2cc([CH2:1][CH2:1]CCCC3CCC3)ccc2cn1 0.9999759 384.5240 0.0000000 0.0000
+ | 17.2565 21.7717 106.2280 0.9999980 C[CH2:0][CH2:0]c1cncc2ccc([CH2:1][NH:1]Cc3ccc(C(=O)NC)cc3)cc12 c1ccc(C[NH:1][CH2:1]c2ccc3cnccc3c2)cc1 0.9999980 347.4620 1.0000000 1.0000
+ | 17.8066 23.0775 104.9221 0.9999970 [CH3:0][CH2:0]c1cncc2ccc([CH2:1][N:1]3Cc4ccccc4C(CC(=O)O)C3)cc12 c1ccc2c(c1)CC[N:1]([CH2:1]c1ccc3cnccc3c1)C2 0.9999970 360.4570 0.0000000 0.0000
+ | 16.6595 19.9250 108.0746 0.9999970 c1cc[c:0]([CH2:0]c2cncc3ccc([CH2:1][CH2:1]CN4CCCOCC4)cc23)cc1 c1cc[c:0]([CH2:0]c2cncc3ccc([CH2:1][CH2:1]CN4CCCOCC4)cc23)cc1 0.9999970 360.5010 1.0000000 1.0000
+ | 19.0529 14.8395 -14.8395 0.0000000 O=C(O)[CH2:0][CH2:0]c1cncc2ccc([CH2:1][C:1](F)(F)F)cc12 c1ccc2cnccc2c1 0.9995325 283.2490 0.0000000 0.0000
+ | 18.2831 21.0902 106.9095 0.9999975 CCC[CH2:0][CH2:0]c1cncc2ccc([CH2:1][c:1]3ccccc3C(F)(F)F)cc12 c1cc[c:1]([CH2:1]c2ccc3cnccc3c2)cc1 0.9999975 357.4190 1.0000000 1.0000
+ | 28.9122 30.2710 97.7008 0.9997795 O=C(O)C1CCC(C[NH:1][CH2:1]c2ccc3cncc([CH2:0][CH2:0]CC4CCCC4)c3c2)CC1 c1cc2cncc([CH2:0][CH2:0]CC3CCCC3)c2cc1[CH2:1][NH:1]CC1CCCCC1 0.9997795 408.5860 0.0000000 0.0000
+ | 13.7902 15.3195 112.6496 0.9997582 NC[CH2:0][CH2:0]c1cncc2ccc([CH2:1][CH2:1]c3ccccc3)cc12 c1ccc([CH2:1][CH2:1]c2ccc3cnccc3c2)cc1 0.9997582 290.4100 1.0000000 1.0000
+ | 30.0018 30.3204 97.6791 0.9999959 O=C(CCNC[CH2:0][CH2:0]c1cncc2ccc([CH2:1][CH3:1])cc12)CC1=CCCCC1 O=C(CCNC[CH2:0][CH2:0]c1cncc2ccccc12)CC1=CCCCC1 0.9999959 364.5330 1.0000000 1.0000
+ | 19.3017 24.8820 -24.8820 0.0000000 NC[CH2:1][CH2:1]c1ccc2cncc([CH2:0][NH:0]CCNCCO)c2c1 c1ccc2cnccc2c1 0.9999200 302.4220 1.0000000 1.0000
+18:12:18 <INFO> Score: 0.88 Agent NLL: 20.15 Valid:  98% Step: 12
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 13.5935 16.2294 -16.2294 0.0000000 [CH3:0][CH2:0]c1cncc2ncc([CH2:1][NH:1]CCNCCN(C)C)cc12 c1cnc2cnccc2c1 0.9999124 301.4380 1.0000000 1.0000
+ | 22.4665 32.1449 95.8544 0.9999943 CNC[CH2:1][CH2:1]c1cnc2cncc([CH2:0][N:0]3CCC4CCCC4C3CO)c2c1 c1cnc2cncc([CH2:0][N:0]3CCC4CCCC4C3)c2c1 0.9999943 368.5250 1.0000000 1.0000
+ | 18.5277 16.0139 -16.0139 0.0000000 C[N+:0](C)(C)[CH2:0]c1cncc2ncc([CH2:1][NH2:1])cc12 c1cnc2cnccc2c1 0.9470977 231.3230 1.0000000 1.0000
+ | 11.0904 10.7312 117.2639 0.9999616 c1cc[c:0]([CH2:0]c2cncc3ncc([CH2:1][c:1]4ccccc4)cc23)cc1 c1cc[c:0]([CH2:0]c2cncc3ncc([CH2:1][c:1]4ccccc4)cc23)cc1 0.9999616 310.4000 1.0000000 1.0000
+ | 22.2829 30.2627 97.7361 0.9999903 CNC[CH2:1][CH2:1]c1cnc2cncc([CH2:0][c:0]3ccc(C4(CN)CCC4)cc3)c2c1 c1cnc2cncc([CH2:0][c:0]3ccc(C4CCC4)cc3)c2c1 0.9999903 374.5320 1.0000000 1.0000
+ | 23.1377 31.6369 96.3453 0.9998609 NCC1CC2CC1[CH:0]([CH2:0]c1cncc3ncc([CH2:1][CH3:1])cc13)N2 c1cnc2cncc([CH2:0][CH:0]3NC4CCC3C4)c2c1 0.9998609 296.4180 1.0000000 1.0000
+ | 23.1021 31.2344 96.7443 0.9998333 NC1CCC(Oc2cc[c:0]([CH2:0]c3cncc4ncc([CH2:1][CH3:1])cc34)cc2)CC(N)C1N c1cnc2cncc([CH2:0][c:0]3ccc(OC4CCCCCC4)cc3)c2c1 0.9998333 405.5460 1.0000000 1.0000
+ | 25.3156 31.4477 93.7747 0.9782994 OC1(c2ccccc2)CCC(NC[CH2:0][CH2:0]c2cncc3ncc([CH2:1][CH:1]4CCNCC4)cc23)CC1 c1ccc(C2CCC(NC[CH2:0][CH2:0]c3cncc4ncc([CH2:1][CH:1]5CCNCC5)cc34)CC2)cc1 0.9782994 458.6500 1.0000000 1.0000
+ | 14.5517 17.2597 110.7400 0.9999977 OC1CCC([NH:0][CH2:0]c2cncc3ncc([CH2:1][N:1]4CCNCC4)cc23)CC1 c1nc2cncc([CH2:0][NH:0]C3CCCCC3)c2cc1[CH2:1][N:1]1CCNCC1 0.9999977 355.4860 1.0000000 1.0000
+ | 16.0504 24.0702 103.9277 0.9999832 c1ccc(OC2CC2[NH:0][CH2:0]c2cncc3ncc([CH2:1][CH3:1])cc23)cc1 c1ccc(OC2CC2[NH:0][CH2:0]c2cncc3ncccc23)cc1 0.9999832 319.4080 1.0000000 1.0000
+18:12:20 <INFO> Score: 0.83 Agent NLL: 19.43 Valid:  99% Step: 13
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 23.6465 27.3106 -27.3106 0.0000000 CNCCOCCOCCOCC[NH:1][CH2:1]c1cnc2cncc([CH2:0][N:0](C)C)c2c1 c1cnc2cnccc2c1 0.9998334 405.5430 1.0000000 1.0000
+ | 16.1302 16.3343 111.6652 0.9999965 CN1CC[N:0]([CH2:0]c2cncc3ncc([CH2:1][O:1]Cc4ccccc4)cc23)CC1 c1ccc(C[O:1][CH2:1]c2cnc3cncc([CH2:0][N:0]4CCNCC4)c3c2)cc1 0.9999965 362.4770 1.0000000 1.0000
+ | 29.4079 29.2790 -19.1457 0.0791664 O=[N+]([O-])c1ccc(-c2ccc(C[NH:0][CH2:0]c3cncc4ncc([CH2:1][NH:1]CCCN5CCOCC5)cc34)cc2)cc1 c1ccc(-c2ccc(C[NH:0][CH2:0]c3cncc4ncc([CH2:1][NH:1]CCCN5CCOCC5)cc34)cc2)cc1 0.0791664 526.6410 1.0000000 1.0000
+ | 13.8797 11.6150 -11.6150 0.0000000 CC[NH:1][CH2:1]c1cnc2cncc([CH2:0][NH:0]C)c2c1 c1cnc2cnccc2c1 0.9422482 230.3150 1.0000000 1.0000
+ | 13.8242 13.7934 113.8950 0.9975661 Oc1cccc[c:0]1[CH2:0]c1cncc2ncc([CH2:1][NH2:1])cc12 c1cc[c:0]([CH2:0]c2cncc3ncccc23)cc1 0.9975661 265.3160 1.0000000 1.0000
+ | 28.5867 32.2159 95.7837 0.9999975 O=COCCC[NH:0][CH2:0]c1cncc2ncc([CH2:1][N:1]3CCCCC3)cc12 c1cc2cc([CH2:1][N:1]3CCCCC3)cnc2cn1 0.9999975 342.4430 0.0000000 0.0000
+ | 34.0822 50.3863 77.5695 0.9996544 NCC1(O)CCC(O)C[CH:0]1[CH2:0]c1cncc2ncc([CH2:1][c:1]3cc(F)ccc3F)cc12 c1cc[c:1]([CH2:1]c2cnc3cncc([CH2:0][CH:0]4CCCCC4)c3c2)cc1 0.9996544 413.4680 1.0000000 1.0000
+ | 15.2481 18.4110 109.5886 0.9999972 CN1CC[N:1]([CH2:1]c2cnc3cncc([CH2:0][CH:0]4CCOCC4)c3c2)CC1 c1nc2cncc([CH2:0][CH:0]3CCOCC3)c2cc1[CH2:1][N:1]1CCNCC1 0.9999972 340.4710 1.0000000 1.0000
+ | 30.0890 32.8077 95.1889 0.9999737 O=C1CCCCNC1C[NH:0][CH2:0]c1cncc2ncc([CH2:1][NH:1]CCCCO)cc12 O=C1CCCCNC1C[NH:0][CH2:0]c1cncc2ncccc12 0.9999737 385.5120 1.0000000 1.0000
+ | 18.5278 26.1333 95.7065 0.9518740 NC1CC[N:0]([CH2:0]c2cncc3ncc([CH2:1][c:1]4ccc(S(=O)(=O)N5CCOCC5)cc4)cc23)C1 O=S(=O)(c1cc[c:1]([CH2:1]c2cnc3cncc([CH2:0][N:0]4CCCC4)c3c2)cc1)N1CCOCC1 0.9518740 467.5950 1.0000000 1.0000
+18:12:23 <INFO> Score: 0.87 Agent NLL: 19.16 Valid:  98% Step: 14
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 31.6848 40.7018 87.2975 0.9999948 [CH3:0][CH2:0]c1cncc2ncc([CH2:1][CH2:1]CNC(=O)C(=O)NC3C4CNC3C4)cc12 O=C(NC[CH2:1][CH2:1]c1cnc2cnccc2c1)C(=O)NC1C2CNC1C2 0.9999948 367.4530 1.0000000 1.0000
+ | 11.0752 14.5025 -14.5025 0.0000000 c1nc2cncc([CH2:0][N:0]3CCNCC3)c2cc1[CH2:1][N:1]1CCCC1 c1nc2cncc([CH2:0][N:0]3CCNCC3)c2cc1[CH2:1][N:1]1CCCC1 0.9999651 311.4330 1.0000000 1.0000
+ | 16.6264 21.7637 106.2347 0.9999874 NCCN1CC[N:1]([CH2:1]c2cnc3cncc([CH2:0][c:0]4ccccc4O)c3c2)CC1 c1cc[c:0]([CH2:0]c2cncc3ncc([CH2:1][N:1]4CCNCC4)cc23)cc1 0.9999874 377.4920 1.0000000 1.0000
+ | 19.7712 27.0101 -27.0101 0.0000000 N#C[CH2:0][CH2:0]c1cncc2ncc([CH2:1][c:1]3ccccc3Cl)cc12 c1cc[c:1]([CH2:1]c2cnc3cnccc3c2)cc1 0.9999512 307.7840 1.0000000 1.0000
+ | 13.9998 23.1620 104.8370 0.9999926 NCC[NH:0][CH2:0]c1cncc2ncc([CH2:1][NH:1]CCN3CCCC3)cc12 c1cc2cc([CH2:1][NH:1]CCN3CCCC3)cnc2cn1 0.9999926 328.4640 1.0000000 1.0000
+ | 11.0555 14.6548 -14.6548 0.0000000 [CH3:0][CH2:0]c1cncc2ncc([CH2:1][N:1]3CCCCCC3)cc12 c1cc2cc([CH2:1][N:1]3CCCCCC3)cnc2cn1 0.9983266 269.3920 1.0000000 1.0000
+ | 14.1317 21.0061 106.9927 0.9999911 CN1CC[N:1]([CH2:1]c2cnc3cncc([CH2:0][N:0]4CC(N)C4)c3c2)CC1 c1nc2cncc([CH2:0][N:0]3CCC3)c2cc1[CH2:1][N:1]1CCNCC1 0.9999911 326.4480 1.0000000 1.0000
+ | 21.2691 31.2802 96.7191 0.9999948 NC1CNC([CH2:0][CH2:0]c2cncc3ncc([CH2:1][c:1]4ccccc4)cc23)C1 c1cc[c:1]([CH2:1]c2cnc3cncc([CH2:0][CH2:0]C4CCCN4)c3c2)cc1 0.9999948 332.4510 1.0000000 1.0000
+ | 22.5399 27.4099 100.4781 0.9991249 O=C1CCCN1C1CCC([NH:0][CH2:0]c2cncc3ncc([CH2:1][N:1]4CCOCC4)cc23)CC1 O=C1CCCN1C1CCC([NH:0][CH2:0]c2cncc3ncc([CH2:1][N:1]4CCOCC4)cc23)CC1 0.9991249 423.5610 1.0000000 1.0000
+ | 18.1491 21.4604 106.5351 0.9999652 CS(=O)(=O)C1CC[N:1]([CH2:1]c2cnc3cncc([CH2:0][N:0]4CCCC4)c3c2)CC1 c1nc2cncc([CH2:0][N:0]3CCCC3)c2cc1[CH2:1][N:1]1CCCCC1 0.9999652 388.5370 1.0000000 1.0000
+18:12:26 <INFO> Score: 0.83 Agent NLL: 20.61 Valid:  97% Step: 15
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 19.4498 21.0505 106.8373 0.9991232 C[CH:0]([CH2:0]c1cncc2ccc([CH2:1][N:1]3CCN(S(C)(=O)=O)CC3)cc12)c1ccccc1 c1ccc([CH2:0][CH2:0]c2cncc3ccc([CH2:1][N:1]4CCNCC4)cc23)cc1 0.9991232 423.5820 1.0000000 1.0000
+ | 39.8531 52.6948 -52.6948 0.0000000 INVALID1 -- 0.0000000 0.0000 0.0000000 0.0000
+ | 16.7157 17.5523 110.4455 0.9999827 OC1CCCCC1[NH:1][CH2:1]c1ccc2cncc([CH2:0][c:0]3ccc(Cl)cc3)c2c1 c1cc[c:0]([CH2:0]c2cncc3ccc([CH2:1][NH:1]C4CCCCC4)cc23)cc1 0.9999827 380.9190 1.0000000 1.0000
+ | 32.5752 31.5819 94.1034 0.9819168 OC12CCC(N3CCCC3)C1CC([O:1][CH2:1]c1ccc3cncc([CH2:0][c:0]4ccccc4)c3c1)CC2 c1cc[c:0]([CH2:0]c2cncc3ccc([CH2:1][O:1]C4CCC5CCC(N6CCCC6)C5C4)cc23)cc1 0.9819168 456.6300 1.0000000 1.0000
+ | 32.2447 43.8485 -17.4538 0.2062085 FC(F)(F)c1ccc(CCCC2CC3C[N:1]([CH2:1]c4ccc5cncc([CH2:0][c:0]6ccccc6)c5c4)CC23)cc1 c1ccc(CCCC2CC3C[N:1]([CH2:1]c4ccc5cncc([CH2:0][c:0]6ccccc6)c5c4)CC23)cc1 0.2062085 514.6350 1.0000000 1.0000
+ | 13.9025 18.4039 109.5653 0.9997594 OC1(c2ccccn2)CC[N:1]([CH2:1]c2ccc3cncc([CH2:0][c:0]4ccccc4)c3c2)CC1 c1cc[c:0]([CH2:0]c2cncc3ccc([CH2:1][N:1]4CCC(c5ccccn5)CC4)cc23)cc1 0.9997594 409.5330 1.0000000 1.0000
+ | 30.1668 31.8899 96.0079 0.9992021 c1ccc([N:0](Cc2nccs2)[CH2:0]c2cncc3ccc([CH2:1][c:1]4cccnc4)cc23)cc1 c1ccc([N:0](Cc2nccs2)[CH2:0]c2cncc3ccc([CH2:1][c:1]4cccnc4)cc23)cc1 0.9992021 422.5570 1.0000000 1.0000
+ | 24.0588 29.4380 98.5617 0.9999980 NC[C:0]1([CH2:0]c2cncc3ccc([CH2:1][N:1]4CCCC4)cc23)C2CNCC1C2 c1cc2cncc([CH2:0][CH:0]3C4CNCC3C4)c2cc1[CH2:1][N:1]1CCCC1 0.9999980 350.5100 1.0000000 1.0000
+ | 32.2628 36.2926 -36.2926 0.0000000 INVALID8 -- 0.0000000 0.0000 0.0000000 0.0000
+ | 21.0986 23.0701 104.9280 0.9999849 C[N:1](C)[CH2:1]c1ccc2cncc([CH2:0][N:0]3CCC(=C4NC(=O)NC4=O)CC3)c2c1 O=C1NC(=O)C(=C2CC[N:0]([CH2:0]c3cncc4ccccc34)CC2)N1 0.9999849 379.4640 1.0000000 1.0000
+18:12:28 <INFO> Score: 0.92 Agent NLL: 19.98 Valid:  99% Step: 16
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 20.0028 30.8247 97.1713 0.9999682 NC1c2ccccc2C[CH:0]1[CH2:0]c1cnc2cncc([CH2:1][N:1]3CCCNCC3)c2c1 c1ccc2c(c1)C[CH:0]([CH2:0]c1cnc3cncc([CH2:1][N:1]4CCCNCC4)c3c1)C2 0.9999682 387.5310 1.0000000 1.0000
+ | 15.6916 21.5729 106.4186 0.9999333 Cc1cccn[c:1]1[CH2:1]c1cncc2ncc([CH2:0][N:0]3CCC3)cc12 c1cc[c:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCC4)cc23)nc1 0.9999333 304.3970 1.0000000 1.0000
+ | 17.8889 23.0422 104.9576 0.9999980 Cc1ccc(N2CC[N:1]([CH2:1]c3cncc4ncc([CH2:0][NH2:0])cc34)CC2)cc1 c1ccc(N2CC[N:1]([CH2:1]c3cncc4ncccc34)CC2)cc1 0.9999980 347.4660 1.0000000 1.0000
+ | 24.1731 20.6437 107.3115 0.9996495 c1nc2cncc([CH2:1][OH:1])c2cc1[CH2:0][NH:0]CC1CCCNC1 c1cc2cc([CH2:0][NH:0]CC3CCCNC3)cnc2cn1 0.9996495 286.3790 1.0000000 1.0000
+ | 27.0518 27.3770 100.2405 0.9970117 Fc1ccc([NH:1][CH2:1]c2cncc3ncc([CH2:0][O:0]CCNc4ccc(Cl)cc4)cc23)cc1 c1ccc(NCC[O:0][CH2:0]c2cnc3cncc([CH2:1][NH:1]c4ccccc4)c3c2)cc1 0.9970117 436.9180 1.0000000 1.0000
+ | 18.0360 24.3077 103.6920 0.9999977 O=C1C[N:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCCC4CO)cc23)CCN1 O=C1C[N:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCCC4)cc23)CCN1 0.9999977 355.4420 1.0000000 1.0000
+ | 18.3040 23.2229 104.7766 0.9999968 CC1CCC[N:0]([CH2:0]c2cnc3cncc([CH2:1][CH:1]4CCCNC4)c3c2)C1 c1nc2cncc([CH2:1][CH:1]3CCCNC3)c2cc1[CH2:0][N:0]1CCCCC1 0.9999968 338.4990 1.0000000 1.0000
+ | 23.5180 23.5265 104.4664 0.9999447 CSc1cccc[c:1]1[CH2:1]c1cncc2ncc([CH2:0][N:0]3CCC(CO)CC3)cc12 c1cc[c:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCCCC4)cc23)cc1 0.9999447 393.5560 1.0000000 1.0000
+ | 14.5133 16.4948 111.5038 0.9999894 CS(=O)(=O)N1CC[N:1]([CH2:1]c2cncc3ncc([CH2:0][NH:0]C4CC4)cc23)CC1 c1nc2cncc([CH2:1][N:1]3CCNCC3)c2cc1[CH2:0][NH:0]C1CC1 0.9999894 375.4980 1.0000000 1.0000
+ | 24.5922 25.9441 99.5349 0.9803048 NCC[N:1](S(=O)(=O)c1ccc(F)cc1)[CH2:1]c1cncc2ncc([CH2:0][N:0]3CCCCC3)cc12 O=S(=O)(c1ccccc1)[NH:1][CH2:1]c1cncc2ncc([CH2:0][N:0]3CCCCC3)cc12 0.9803048 457.5750 1.0000000 1.0000
+18:12:30 <INFO> Score: 0.88 Agent NLL: 21.19 Valid:  98% Step: 17
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 20.1708 20.6046 107.3950 0.9999970 CNc1cc[c:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCCCCC4)cc23)cc1 c1cc[c:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCCCCC4)cc23)cc1 0.9999970 360.5050 1.0000000 1.0000
+ | 22.4374 30.6028 97.3949 0.9999817 c1ccc2c[c:0]([CH2:0]c3cnc4cncc([CH2:1][N:1]5CCCCCC5)c4c3)ccc2c1 c1ccc2c[c:0]([CH2:0]c3cnc4cncc([CH2:1][N:1]5CCCCCC5)c4c3)ccc2c1 0.9999817 381.5230 1.0000000 1.0000
+ | 21.1992 26.4855 101.5139 0.9999956 CC[NH:0][CH2:0]c1cnc2cncc([CH2:1][NH:1]C(C)c3cccc(C)c3)c2c1 c1ccc(C[NH:1][CH2:1]c2cncc3ncccc23)cc1 0.9999956 334.4670 1.0000000 1.0000
+ | 31.4141 43.4132 84.5745 0.9999044 FC1C[N:0]([CH2:0]c2cnc3cncc([CH2:1][N:1]4CCOCC4)c3c2)CCCC12CCN2 c1nc2cncc([CH2:1][N:1]3CCOCC3)c2cc1[CH2:0][N:0]1CCCC2(CCN2)CC1 0.9999044 399.5140 1.0000000 1.0000
+ | 35.1726 41.0893 86.9030 0.9999396 NC1NC(=O)C2C1CCCC[N:1]2[CH2:1]c1cncc2ncc([CH2:0][N:0]3CCCC3)cc12 O=C1NCC2CCCC[N:1]([CH2:1]c3cncc4ncc([CH2:0][N:0]5CCCC5)cc34)C12 0.9999396 394.5230 0.0000000 0.0000
+ | 24.5163 29.5107 98.2795 0.9983609 ClC[NH:1][CH2:1]c1cncc2ncc([CH2:0][N:0]3CCN(Cc4ccc(Cl)cc4)CC3)cc12 c1ccc(CN2CC[N:0]([CH2:0]c3cnc4cnccc4c3)CC2)cc1 0.9983609 430.3830 1.0000000 1.0000
+ | 16.9076 24.6289 97.1969 0.9517642 c1ccc2nc(CN3CC[N:0]([CH2:0]c4cnc5cncc([CH2:1][N:1]6CCNCC6)c5c4)CC3)ccc2c1 c1ccc2nc(CN3CC[N:0]([CH2:0]c4cnc5cncc([CH2:1][N:1]6CCNCC6)c5c4)CC3)ccc2c1 0.9517642 467.6210 1.0000000 1.0000
+ | 14.8650 23.0578 104.9373 0.9999620 c1ccc2c(c1)OCCC[N:0]2[CH2:0]c1cnc2cncc([CH2:1][N:1]3CCNCC3)c2c1 c1ccc2c(c1)OCCC[N:0]2[CH2:0]c1cnc2cncc([CH2:1][N:1]3CCNCC3)c2c1 0.9999620 389.5030 1.0000000 1.0000
+ | 18.4818 24.1716 103.7640 0.9994964 CN1CC[N:1]([CH2:1]c2cncc3ncc([CH2:0][O:0]c4ccc5c(c4)CCNCC5)cc23)CC1 c1nc2cncc([CH2:1][N:1]3CCNCC3)c2cc1[CH2:0][O:0]c1ccc2c(c1)CCNCC2 0.9994964 417.5570 1.0000000 1.0000
+ | 10.9928 14.4943 113.5016 0.9999681 c1nc2cncc([CH2:1][N:1]3CCOCC3)c2cc1[CH2:0][N:0]1CCCC1 c1nc2cncc([CH2:1][N:1]3CCOCC3)c2cc1[CH2:0][N:0]1CCCC1 0.9999681 312.4170 1.0000000 1.0000
+18:12:33 <INFO> Score: 0.90 Agent NLL: 20.04 Valid: 100% Step: 18
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 27.2029 32.5058 95.4926 0.9999874 C#[C:0][CH2:0]c1cnc2cncc([CH2:1][CH2:1]CN3CCC4(CC3)CN(C)C(=O)N4)c2c1 O=C1NCC2(CCN(C[CH2:1][CH2:1]c3cncc4ncccc34)CC2)N1 0.9999874 377.4920 0.0000000 0.0000
+ | 37.7083 42.3102 85.6705 0.9998487 CNc1cc[c:0]([CH2:0]c2cnc3cncc([CH2:1][c:1]4c(C(=O)O)csc4N)c3c2)cc1 c1cc[c:0]([CH2:0]c2cnc3cncc([CH2:1][c:1]4ccsc4)c3c2)cc1 0.9998487 404.4950 0.0000000 0.0000
+ | 16.4021 16.7603 -16.7603 0.0000000 O=C(O)[CH2:1][CH2:1]c1cncc2ncc([CH2:0][c:0]3ccccc3)cc12 c1cc[c:0]([CH2:0]c2cnc3cnccc3c2)cc1 0.9997975 292.3380 0.0000000 0.0000
+ | 21.0604 27.7570 100.2093 0.9997367 CCCN1CC[N:0]([CH2:0]c2cnc3cncc([CH2:1][CH:1](F)c4ccc(F)cc4)c3c2)CC1 c1ccc([CH2:1][CH2:1]c2cncc3ncc([CH2:0][N:0]4CCNCC4)cc23)cc1 0.9997367 410.5120 1.0000000 1.0000
+ | 19.8027 25.3132 102.6861 0.9999943 CN1CCC[N:1]([CH2:1]c2cncc3ncc([CH2:0][O:0]CC4CCCC4)cc23)CC1 c1nc2cncc([CH2:1][N:1]3CCCNCC3)c2cc1[CH2:0][O:0]CC1CCCC1 0.9999943 368.5250 1.0000000 1.0000
+ | 18.1446 22.4845 105.5149 0.9999952 c1nc2cncc([CH2:1][CH2:1]CNC3CCCCC3)c2cc1[CH2:0][N:0]1CCCCC1 c1nc2cncc([CH2:1][CH2:1]CNC3CCCCC3)c2cc1[CH2:0][N:0]1CCCCC1 0.9999952 366.5530 1.0000000 1.0000
+ | 10.6930 14.3171 113.6817 0.9999903 CN1CC[N:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCCC4)cc23)CC1 c1nc2cncc([CH2:1][N:1]3CCNCC3)c2cc1[CH2:0][N:0]1CCCC1 0.9999903 325.4600 1.0000000 1.0000
+ | 27.3991 43.5146 84.4838 0.9999873 NC12CCC(C[N:0]([CH2:0]c3cnc4cncc([CH2:1][N:1]5CC=CCC5)c4c3)CC1)C2 C1=CC[N:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCC5CCC(C5)C4)cc23)CC1 0.9999873 377.5360 1.0000000 1.0000
+ | 15.3668 21.5907 106.3164 0.9992747 Fc1ccccc1N1CC[N:0]([CH2:0]c2cnc3cncc([CH2:1][N:1]4CCOCC4)c3c2)CC1 c1ccc(N2CC[N:0]([CH2:0]c3cnc4cncc([CH2:1][N:1]5CCOCC5)c4c3)CC2)cc1 0.9992747 421.5200 1.0000000 1.0000
+ | 31.9423 31.9569 96.0320 0.9999128 CN(C)CC(=O)NC[CH2:1][CH2:1]c1cncc2ncc([CH2:0][N:0]3CCNC(=O)CC3)cc12 O=C1CC[N:0]([CH2:0]c2cnc3cnccc3c2)CCN1 0.9999128 398.5110 1.0000000 1.0000
+18:12:35 <INFO> Score: 0.89 Agent NLL: 20.48 Valid:  96% Step: 19
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 23.5797 22.6774 105.3217 0.9999926 c1cc[c:1]([CH2:1]c2cncc3ccc([CH2:0][N:0]4CCCC5CCN4CC5)cc23)cc1 c1cc[c:1]([CH2:1]c2cncc3ccc([CH2:0][N:0]4CCCC5CCN4CC5)cc23)cc1 0.9999926 371.5280 0.0000000 0.0000
+ | 27.2139 33.2393 94.3145 0.9965137 CCCNCc1cc[c:0]([CH2:0]c2ccc3cncc([CH2:1][N:1]4CCN(C)S4(=O)=O)c3c2)cc1 O=S1(=O)NCC[N:1]1[CH2:1]c1cncc2ccc([CH2:0][c:0]3ccccc3)cc12 0.9965137 438.5970 1.0000000 1.0000
+ | 19.7768 23.0206 104.9783 0.9999912 Cc1cccc[c:0]1[CH2:0]c1ccc2cncc([CH2:1][N:1]3CCC(=O)N(C)CC3)c2c1 O=C1CC[N:1]([CH2:1]c2cncc3ccc([CH2:0][c:0]4ccccc4)cc23)CCN1 0.9999912 373.5000 1.0000000 1.0000
+ | 26.1274 39.4657 88.5339 0.9999974 OCC1(O)CCC[N:1]([CH2:1]c2cncc3ccc([CH2:0][NH:0]C4CC4)cc23)C1 c1cc2cncc([CH2:1][N:1]3CCCCC3)c2cc1[CH2:0][NH:0]C1CC1 0.9999974 341.4550 1.0000000 1.0000
+ | 21.4552 30.8583 97.1283 0.9998951 FC1(F)C[N:1]([CH2:1]c2cncc3ccc([CH2:0][N:0]4CCN(CC5CCC5)CC4)cc23)C1 c1cc2cncc([CH2:1][N:1]3CCC3)c2cc1[CH2:0][N:0]1CCN(CC2CCC2)CC1 0.9998951 400.5170 1.0000000 1.0000
+ | 22.6036 23.3860 104.6125 0.9999884 NC[CH2:1][CH2:1]c1cncc2ccc([CH2:0][N:0]3CCC4CCCC3C4)cc12 c1cc2cc([CH2:0][N:0]3CCC4CCCC3C4)ccc2cn1 0.9999884 323.4840 1.0000000 1.0000
+ | 20.6525 26.6581 101.3355 0.9999496 c1cc2cncc([CH2:1][C:1]3=NCCCC3)c2cc1[CH2:0][N:0]1CCCC1 c1cc2cncc([CH2:1][C:1]3=NCCCC3)c2cc1[CH2:0][N:0]1CCCC1 0.9999496 307.4410 1.0000000 1.0000
+ | 21.9438 30.5325 97.4670 0.9999968 c1cncc(COC[CH2:1][CH2:1]c2cncc3ccc([CH2:0][N:0]4CCCC4)cc23)c1 c1cncc(COC[CH2:1][CH2:1]c2cncc3ccc([CH2:0][N:0]4CCCC4)cc23)c1 0.9999968 361.4890 1.0000000 1.0000
+ | 24.7621 40.6276 86.7278 0.9949640 C(=Cc1ccccc1)NC1CCC[N:0]([CH2:0]c2ccc3cncc([CH2:1][N:1]4CCOCC4)c3c2)C1 C(=Cc1ccccc1)NC1CCC[N:0]([CH2:0]c2ccc3cncc([CH2:1][N:1]4CCOCC4)c3c2)C1 0.9949640 442.6070 1.0000000 1.0000
+ | 19.1722 22.4403 105.5227 0.9997110 NC1CC[N:0]([CH2:0]c2ccc3cncc([CH2:1][c:1]4cccc(-c5ccc(F)cc5)c4)c3c2)C1 c1ccc(-c2ccc[c:1]([CH2:1]c3cncc4ccc([CH2:0][N:0]5CCCC5)cc34)c2)cc1 0.9997110 411.5240 1.0000000 1.0000
+18:12:37 <INFO> Score: 0.91 Agent NLL: 20.71 Valid:  99% Step: 20
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 14.9090 19.0364 108.9632 0.9999968 CN1CC[N:1]([CH2:1]c2ccc3cncc([CH2:0][CH2:0]c4ccc(O)cc4)c3c2)CC1 c1ccc([CH2:0][CH2:0]c2cncc3ccc([CH2:1][N:1]4CCNCC4)cc23)cc1 0.9999968 361.4890 1.0000000 1.0000
+ | 13.9915 15.6390 112.3593 0.9999873 c1c[c:0]([CH2:0]c2cncc3ccc([CH2:1][N:1]4CCCCC4)cc23)cs1 c1c[c:0]([CH2:0]c2cncc3ccc([CH2:1][N:1]4CCCCC4)cc23)cs1 0.9999873 322.4770 1.0000000 1.0000
+ | 31.3902 43.4203 84.5733 0.9999499 CC(=O)NC[CH2:1][CH2:1]c1ccc2cncc([CH2:0][O:0]CC3CCNC(C)=C3C#N)c2c1 C1=CC(C[O:0][CH2:0]c2cncc3ccccc23)CCN1 0.9999499 392.5030 1.0000000 1.0000
+ | 15.2960 19.2593 108.7405 0.9999979 CN1CC[N:1]([CH2:1]c2ccc3cncc([CH2:0][N:0]4CCCC(N)C4)c3c2)CC1 c1cc2cncc([CH2:0][N:0]3CCCCC3)c2cc1[CH2:1][N:1]1CCNCC1 0.9999979 353.5140 1.0000000 1.0000
+ | 30.1526 35.2100 92.7409 0.9996166 N[C:0]1([CH2:0]c2cncc3ccc([CH2:1][c:1]4ccc(C5CCCN5)cc4)cc23)CCCNCC1 c1c[c:1]([CH2:1]c2ccc3cncc([CH2:0][CH:0]4CCCNCC4)c3c2)ccc1C1CCCN1 0.9996166 414.5970 1.0000000 1.0000
+ | 24.1877 29.9397 98.0517 0.9999334 CCNC1CCCC[N:0]([CH2:0]c2cncc3ccc([CH2:1][N:1]4CCN(C)CC4)cc23)C1 c1cc2cncc([CH2:0][N:0]3CCCCCC3)c2cc1[CH2:1][N:1]1CCNCC1 0.9999334 395.5950 1.0000000 1.0000
+ | 21.1578 24.9286 103.0636 0.9999391 NCC1CCCC(C[NH:1][CH2:1]c2ccc3cncc([CH2:0][N:0]4CCCCCC4)c3c2)C1 c1cc2cncc([CH2:0][N:0]3CCCCCC3)c2cc1[CH2:1][NH:1]CC1CCCCC1 0.9999391 394.6070 1.0000000 1.0000
+ | 25.5882 28.6453 99.2613 0.9992704 O=C(O)CCC1CCC2(CC1)C[N:1]([CH2:1]c1ccc3cncc([CH2:0][N:0]4CCCC4)c3c1)C2 c1cc2cncc([CH2:0][N:0]3CCCC3)c2cc1[CH2:1][N:1]1CC2(CCCCC2)C1 0.9992704 421.5850 0.0000000 0.0000
+ | 12.7124 17.4998 110.4998 0.9999968 NCC1CC[N:1]([CH2:1]c2ccc3cncc([CH2:0][N:0]4CCCC4)c3c2)CC1 c1cc2cncc([CH2:0][N:0]3CCCC3)c2cc1[CH2:1][N:1]1CCCCC1 0.9999968 338.4990 1.0000000 1.0000
+ | 48.7147 62.3056 -62.3035 0.0000161 O=C1NC2CC3C(C4NC(=O)NC4C2N1)C1CCC3[N:1]1[CH2:1]c1ccc2cncc([CH2:0][N:0]3CCC(CCc4ccccc4)CC3)c2c1 O=C1NC2CC3C(C4NC(=O)NC4C2N1)C1CCC3[N:1]1[CH2:1]c1ccc2cncc([CH2:0][N:0]3CCC(CCc4ccccc4)CC3)c2c1 0.0000161 619.8140 1.0000000 1.0000
+18:12:40 <INFO> Score: 0.89 Agent NLL: 19.86 Valid: 100% Step: 21
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 16.9501 18.9789 109.0200 0.9999912 NC(=O)c1cc[c:0]([CH2:0]c2cncc3ccc([CH2:1][N:1]4CCCCCC4)cc23)cc1 c1cc[c:0]([CH2:0]c2cncc3ccc([CH2:1][N:1]4CCCCCC4)cc23)cc1 0.9999912 373.5000 1.0000000 1.0000
+ | 28.6494 29.3337 98.6660 0.9999977 OC[CH2:0][CH2:0]c1cncc2ccc([CH2:1][N:1]3CCC4(CCNCC4O)C3)cc12 c1cc2cc([CH2:1][N:1]3CCC4(CCNCC4)C3)ccc2cn1 0.9999977 355.4820 1.0000000 1.0000
+ | 19.5065 23.2221 104.7768 0.9999920 O=C1c2ccccc2C[CH:0]1[CH2:0]c1cncc2ccc([CH2:1][N:1]3CCOCC3)cc12 O=C1c2ccccc2C[CH:0]1[CH2:0]c1cncc2ccc([CH2:1][N:1]3CCOCC3)cc12 0.9999920 372.4680 1.0000000 1.0000
+ | 20.6316 27.3074 100.6764 0.9998736 CC1C[N:1]([CH2:1]c2ccc3cncc([CH2:0][N:0]4CC(O)(c5ccccc5)C4)c3c2)CCN1 c1ccc(C2C[N:0]([CH2:0]c3cncc4ccc([CH2:1][N:1]5CCNCC5)cc34)C2)cc1 0.9998736 402.5420 1.0000000 1.0000
+ | 24.6288 23.5849 104.4148 0.9999979 c1cnc(C2CCCNC2[CH2:0][CH2:0]c2cncc3ccc([CH2:1][CH3:1])cc23)cn1 c1ccc2c([CH2:0][CH2:0]C3NCCCC3c3cnccn3)cncc2c1 0.9999979 346.4780 1.0000000 1.0000
+ | 16.1489 16.2561 111.7435 0.9999970 OCC1CCCC[N:0]1[CH2:0]c1cncc2ccc([CH2:1][N:1]3CCCC3)cc12 c1cc2cncc([CH2:0][N:0]3CCCCC3)c2cc1[CH2:1][N:1]1CCCC1 0.9999970 339.4830 1.0000000 1.0000
+ | 10.4269 13.3698 114.6107 0.9998477 c1cc2cncc([CH2:0][N:0]3CCCC3)c2cc1[CH2:1][N:1]1CCCC1 c1cc2cncc([CH2:0][N:0]3CCCC3)c2cc1[CH2:1][N:1]1CCCC1 0.9998477 295.4300 1.0000000 1.0000
+ | 14.4248 22.8302 105.1681 0.9999861 c1ccc(-c2cc[c:1]([CH2:1]c3ccc4cncc([CH2:0][N:0]5CCCC5)c4c3)cc2)cc1 c1ccc(-c2cc[c:1]([CH2:1]c3ccc4cncc([CH2:0][N:0]5CCCC5)c4c3)cc2)cc1 0.9999861 378.5190 1.0000000 1.0000
+ | 15.4597 22.6606 105.3390 0.9999968 NCC1CC[N:0]([CH2:0]c2cncc3ccc([CH2:1][O:1]c4ccccc4)cc23)CC1 c1ccc([O:1][CH2:1]c2ccc3cncc([CH2:0][N:0]4CCCCC4)c3c2)cc1 0.9999968 361.4890 1.0000000 1.0000
+ | 18.5548 26.2978 101.6809 0.9998338 FC1CC[N:1]([CH2:1]c2ccc3cncc([CH2:0][N:0]4CCN(c5cccnc5)CC4)c3c2)C1 c1cncc(N2CC[N:0]([CH2:0]c3cncc4ccc([CH2:1][N:1]5CCCC5)cc34)CC2)c1 0.9998338 405.5210 1.0000000 1.0000
+18:12:41 <INFO> Score: 0.94 Agent NLL: 19.91 Valid:  98% Step: 22
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 18.6845 27.7769 100.2194 0.9999710 Cc1ccc[c:1]([CH2:1]c2cnc3cncc([CH2:0][N:0]4CCCN5CCC4CC5)c3c2)c1 c1cc[c:1]([CH2:1]c2cnc3cncc([CH2:0][N:0]4CCCN5CCC4CC5)c3c2)cc1 0.9999710 386.5430 0.0000000 0.0000
+ | 15.6397 22.5498 105.3913 0.9995400 c1ccc(N2CC[N:0]([CH2:0]c3cncc4ncc([CH2:1][N:1]5CCCNCC5)cc34)CC2)cc1 c1ccc(N2CC[N:0]([CH2:0]c3cncc4ncc([CH2:1][N:1]5CCCNCC5)cc34)CC2)cc1 0.9995400 416.5730 1.0000000 1.0000
+ | 15.0361 17.0985 110.9012 0.9999977 c1nc2cncc([CH2:0][N:0]3CCSCC3)c2cc1[CH2:1][N:1]1CCOCC1 c1nc2cncc([CH2:0][N:0]3CCSCC3)c2cc1[CH2:1][N:1]1CCOCC1 0.9999977 344.4840 1.0000000 1.0000
+ | 17.6468 24.1189 103.8807 0.9999970 c1nc2cncc([CH2:0][NH:0]CCN3CCCC3)c2cc1[CH2:1][CH:1]1CCNC1 c1nc2cncc([CH2:0][NH:0]CCN3CCCC3)c2cc1[CH2:1][CH:1]1CCNC1 0.9999970 339.4870 1.0000000 1.0000
+ | 20.1085 33.2201 94.7781 0.9999861 c1nc2cncc([CH2:0][NH:0]C3CC3)c2cc1[CH2:1][N:1]1CCC2CCCCCCC2C1 c1nc2cncc([CH2:0][NH:0]C3CC3)c2cc1[CH2:1][N:1]1CCC2CCCCCCC2C1 0.9999861 378.5640 0.0000000 0.0000
+ | 15.8209 22.4673 105.5320 0.9999948 Cc1cccc(C[NH:1][CH2:1]c2cnc3cncc([CH2:0][NH:0]C4CC4)c3c2)c1 c1ccc(C[NH:1][CH2:1]c2cnc3cncc([CH2:0][NH:0]C4CC4)c3c2)cc1 0.9999948 332.4510 1.0000000 1.0000
+ | 25.0039 30.9356 -30.9356 0.0000000 INVALID6 -- 0.0000000 0.0000 0.0000000 0.0000
+ | 19.7721 26.7261 101.2708 0.9999759 c1nc2cncc([CH2:0][NH:0]CCNCCN3CCC3)c2cc1[CH2:1][N:1]1CCOCC1 c1nc2cncc([CH2:0][NH:0]CCNCCN3CCC3)c2cc1[CH2:1][N:1]1CCOCC1 0.9999759 384.5280 1.0000000 1.0000
+ | 22.6496 28.0550 99.9424 0.9999800 NC(=O)N1CCC(C[NH:1][CH2:1]c2cnc3cncc([CH2:0][N:0]4CCCC4)c3c2)CC1 c1nc2cncc([CH2:0][N:0]3CCCC3)c2cc1[CH2:1][NH:1]CC1CCNCC1 0.9999800 382.5120 1.0000000 1.0000
+ | 24.8808 34.4345 76.5603 0.8671466 c1ccc(C(c2ccncn2)N2CC[N:1]([CH2:1]c3cnc4cncc([CH2:0][N:0]5CCCC5)c4c3)CC2)cc1 c1ccc(C(c2ccncn2)N2CC[N:1]([CH2:1]c3cnc4cncc([CH2:0][N:0]5CCCC5)c4c3)CC2)cc1 0.8671466 479.6320 1.0000000 1.0000
+18:12:43 <INFO> Score: 0.91 Agent NLL: 18.13 Valid:  97% Step: 23
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 26.8087 28.0811 99.9176 0.9999894 COC[CH2:1][CH2:1]c1cncc2ccc([CH2:0][N:0]3C(=O)CN(C)c4ccccc43)cc12 O=C1CNc2ccccc2[N:0]1[CH2:0]c1ccc2cnccc2c1 0.9999894 375.4720 1.0000000 1.0000
+ | 16.7646 19.3508 108.6488 0.9999967 Fc1ccc[c:1]([CH2:1]c2cncc3ccc([CH2:0][N:0]4CCC(F)C4)cc23)c1 c1cc[c:1]([CH2:1]c2cncc3ccc([CH2:0][N:0]4CCCC4)cc23)cc1 0.9999967 338.4010 1.0000000 1.0000
+ | 16.1201 18.6027 109.1395 0.9979859 CC1=NCC[N:0]([CH2:0]c2ccc3cncc([CH2:1][CH3:1])c3c2)C1 C1=NCC[N:0]([CH2:0]c2ccc3cnccc3c2)C1 0.9979859 267.3760 1.0000000 1.0000
+ | 17.8426 21.7446 106.2551 0.9999979 OC1CC[N:0]([CH2:0]c2ccc3cncc([CH2:1][N:1]4CCCCCC4)c3c2)CC1 c1cc2cncc([CH2:1][N:1]3CCCCCC3)c2cc1[CH2:0][N:0]1CCCCC1 0.9999979 353.5100 1.0000000 1.0000
+ | 42.8068 54.2897 73.0665 0.9949700 OC12CCC(C(F)F)N(CC1)C([CH2:1][CH2:1]c1cncc3ccc([CH2:0][CH2:0]C4CCCC4)cc13)C2 c1cc2cncc([CH2:1][CH2:1]C3CC4CCCN3CC4)c2cc1[CH2:0][CH2:0]C1CCCC1 0.9949700 442.5940 1.0000000 1.0000
+ | 30.4336 38.4886 89.5100 0.9999894 C[N+]1(c2ccccc2)CCC(N)C1C[NH:0][CH2:0]c1ccc2cncc([CH2:1][CH3:1])c2c1 c1ccc([NH+]2CCCC2C[NH:0][CH2:0]c2ccc3cnccc3c2)cc1 0.9999894 375.5400 1.0000000 1.0000
+ | 13.4076 21.5275 106.4712 0.9999894 NCC1CCC[N:0]1[CH2:0]c1ccc2cncc([CH2:1][N:1]3CCCC3)c2c1 c1cc2cncc([CH2:1][N:1]3CCCC3)c2cc1[CH2:0][N:0]1CCCC1 0.9999894 324.4720 1.0000000 1.0000
+ | 23.7751 24.9450 103.0545 0.9999965 COc1cc[c:1]([CH2:1]c2cncc3ccc([CH2:0][N:0]4CCC4)cc23)cc1C(=O)O c1cc[c:1]([CH2:1]c2cncc3ccc([CH2:0][N:0]4CCC4)cc23)cc1 0.9999965 362.4290 0.0000000 0.0000
+ | 13.5087 14.9843 113.0150 0.9999948 NC1CC[N:0]([CH2:0]c2ccc3cncc([CH2:1][c:1]4cccnc4)c3c2)CC1 c1cnc[c:1]([CH2:1]c2cncc3ccc([CH2:0][N:0]4CCCCC4)cc23)c1 0.9999948 332.4510 1.0000000 1.0000
+ | 12.5192 18.2016 109.7977 0.9999948 CC(=O)N1CC[N:0]([CH2:0]c2ccc3cncc([CH2:1][N:1]4CCNCC4)c3c2)CC1 c1cc2cncc([CH2:1][N:1]3CCNCC3)c2cc1[CH2:0][N:0]1CCNCC1 0.9999948 367.4970 1.0000000 1.0000
+18:12:46 <INFO> Score: 0.90 Agent NLL: 19.30 Valid:  97% Step: 24
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 14.1827 15.7769 112.2203 0.9999779 c1ccc([CH2:0][CH2:0]c2ccc3cncc([CH2:1][N:1]4CCCC4)c3c2)cc1 c1ccc([CH2:0][CH2:0]c2ccc3cncc([CH2:1][N:1]4CCCC4)c3c2)cc1 0.9999779 316.4480 1.0000000 1.0000
+ | 15.4085 19.5101 108.4886 0.9999903 CC1CCC[N:0]1[CH2:0]c1ccc2cncc([CH2:1][N:1]3CCOCC3)c2c1 c1cc2cncc([CH2:1][N:1]3CCOCC3)c2cc1[CH2:0][N:0]1CCCC1 0.9999903 325.4560 1.0000000 1.0000
+ | 32.3404 47.5877 8.6898 0.4396683 Cc1ccccc1-c1cc[c:0]([CH2:0]c2ccc3cncc([CH2:1][N:1]4CC(O)(c5ccccc5F)C4)c3c2)cc1C c1ccc(-c2cc[c:0]([CH2:0]c3ccc4cncc([CH2:1][N:1]5CC(c6ccccc6)C5)c4c3)cc2)cc1 0.4396683 502.6330 1.0000000 1.0000
+ | 19.3743 25.6491 102.3485 0.9999816 NCC1C[CH:1]1[CH2:1]c1cncc2ccc([CH2:0][c:0]3ccc(O)cc3)cc12 c1cc[c:0]([CH2:0]c2ccc3cncc([CH2:1][CH:1]4CC4)c3c2)cc1 0.9999816 318.4200 1.0000000 1.0000
+ | 19.0602 20.7225 107.2466 0.9997590 CS(=O)(=O)N1CCC[N:1]([CH2:1]c2cncc3ccc([CH2:0][c:0]4ccccc4)cc23)CC1 c1cc[c:0]([CH2:0]c2ccc3cncc([CH2:1][N:1]4CCCNCC4)c3c2)cc1 0.9997590 409.5550 1.0000000 1.0000
+ | 26.4293 35.3511 49.4652 0.6626276 c1ccc2c(c1)Cn1cccc1C2N1CC[N:0]([CH2:0]c2ccc3cncc([CH2:1][N:1]4CCNCC4)c3c2)CC1 c1ccc2c(c1)Cn1cccc1C2N1CC[N:0]([CH2:0]c2ccc3cncc([CH2:1][N:1]4CCNCC4)c3c2)CC1 0.6626276 492.6710 1.0000000 1.0000
+ | 20.4914 29.9379 98.0572 0.9999619 CN1CC[N:1]([CH2:1]c2cncc3ccc([CH2:0][N:0]4CC(S(N)(=O)=O)C4)cc23)CC1 c1cc2cncc([CH2:1][N:1]3CCNCC3)c2cc1[CH2:0][N:0]1CCC1 0.9999619 389.5250 1.0000000 1.0000
+ | 20.4267 28.8129 98.9732 0.9983284 COc1ccc(C[N:0]([CH2:0]c2ccc3cncc([CH2:1][N:1]4CCNCC4)c3c2)CC2CC2)cc1 c1ccc(C[N:0]([CH2:0]c2ccc3cncc([CH2:1][N:1]4CCNCC4)c3c2)CC2CC2)cc1 0.9983284 430.5960 1.0000000 1.0000
+ | 17.8346 26.9511 100.9782 0.9994476 CS(=O)(=O)N1CCCC([NH:0][CH2:0]c2ccc3cncc([CH2:1][N:1]4CCOCC4)c3c2)C1 c1cc2cncc([CH2:1][N:1]3CCOCC3)c2cc1[CH2:0][NH:0]C1CCCNC1 0.9994476 418.5630 1.0000000 1.0000
+ | 11.8262 19.1315 -19.1315 0.0000000 CC(=O)N1CC[N:0]([CH2:0]c2ccc3cncc([CH2:1][N:1]4CCOCC4)c3c2)CC1 c1cc2cncc([CH2:1][N:1]3CCOCC3)c2cc1[CH2:0][N:0]1CCNCC1 0.9999943 368.4810 1.0000000 1.0000
+18:12:49 <INFO> Score: 0.85 Agent NLL: 17.05 Valid:  99% Step: 25
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 16.7008 16.9075 111.0280 0.9994959 [CH3:0][CH2:0]c1cncc2ccc([CH2:1][CH:1]3CCCN(C)CC3)cc12 c1cc2cc([CH2:1][CH:1]3CCCNCC3)ccc2cn1 0.9994959 282.4310 1.0000000 1.0000
+ | 15.1687 15.2578 112.6393 0.9991968 [CH3:0][CH2:0]c1cncc2ccc([CH2:1][NH:1]c3cccc(N)c3)cc12 c1ccc([NH:1][CH2:1]c2ccc3cnccc3c2)cc1 0.9991968 277.3710 1.0000000 1.0000
+ | 16.0383 16.4321 -16.4321 0.0000000 CC[NH:1][CH2:1]c1ccc2cncc([CH2:0][N:0](C)C)c2c1 c1ccc2cnccc2c1 0.9818906 243.3540 1.0000000 1.0000
+ | 15.1785 22.2825 105.7152 0.9999817 CC(=O)N1CC[N:1]([CH2:1]c2ccc3cncc([CH2:0][N:0]4CCN(C)CC4)c3c2)CC1 c1cc2cncc([CH2:0][N:0]3CCNCC3)c2cc1[CH2:1][N:1]1CCNCC1 0.9999817 381.5240 1.0000000 1.0000
+ | 12.6093 15.1118 112.8876 0.9999948 CN1CC[N:1]([CH2:1]c2ccc3cncc([CH2:0][c:0]4ccncc4)c3c2)CC1 c1c[c:0]([CH2:0]c2cncc3ccc([CH2:1][N:1]4CCNCC4)cc23)ccn1 0.9999948 332.4510 1.0000000 1.0000
+ | 25.6598 34.6271 93.2958 0.9993976 O=C1NNCN1c1ccc(F)[c:1]([CH2:1]c2ccc3cncc([CH2:0][CH:0]4CCNCC4)c3c2)c1 O=C1NNCN1c1ccc[c:1]([CH2:1]c2ccc3cncc([CH2:0][CH:0]4CCNCC4)c3c2)c1 0.9993976 419.5040 0.0000000 0.0000
+ | 21.0353 26.7322 -26.7322 0.0000000 INVALID6 -- 0.0000000 0.0000 0.0000000 0.0000
+ | 15.8940 22.2425 105.7569 0.9999948 O=C1NCC[N:0]1[CH2:0]c1cncc2ccc([CH2:1][NH:1]c3ccccc3)cc12 O=C1NCC[N:0]1[CH2:0]c1cncc2ccc([CH2:1][NH:1]c3ccccc3)cc12 0.9999948 332.4070 1.0000000 1.0000
+ | 14.7990 24.3289 103.6709 0.9999979 CN1CCN(CC[O:1][CH2:1]c2ccc3cncc([CH2:0][N:0]4CCC4)c3c2)CC1 c1cc2cncc([CH2:0][N:0]3CCC3)c2cc1[CH2:1][O:1]CCN1CCNCC1 0.9999979 354.4980 1.0000000 1.0000
+ | 11.1250 16.0270 -16.0270 0.0000000 c1cc2cncc([CH2:0][N:0]3CCCC3)c2cc1[CH2:1][N:1]1CCOCC1 c1cc2cncc([CH2:0][N:0]3CCCC3)c2cc1[CH2:1][N:1]1CCOCC1 0.9999651 311.4290 1.0000000 1.0000
+18:12:51 <INFO> Score: 0.91 Agent NLL: 19.00 Valid:  99% Step: 26
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 20.4568 26.4518 101.5288 0.9998485 CN1CC[CH:0]([CH2:0]c2cnc3cncc([CH2:1][NH:1]Cc4ccc5c(c4)OCO5)c3c2)CC1 c1nc2cncc([CH2:1][NH:1]Cc3ccc4c(c3)OCO4)c2cc1[CH2:0][CH:0]1CCNCC1 0.9998485 404.5140 0.0000000 0.0000
+ | 19.2853 22.8838 105.0571 0.9995380 C[NH:1][CH2:1]c1cncc2ncc([CH2:0][N:0]3CC4CNCC43)cc12 c1cc2cc([CH2:0][N:0]3CC4CNCC43)cnc2cn1 0.9995380 283.3790 1.0000000 1.0000
+ | 15.5168 18.4125 109.5871 0.9999968 NC(=O)c1cc[c:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCNCC4)cc23)cc1 c1cc[c:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCNCC4)cc23)cc1 0.9999968 361.4490 1.0000000 1.0000
+ | 25.0855 28.9263 99.0644 0.9999273 NC(=O)C1CC[N:0]([CH2:0]c2cnc3cncc([CH2:1][CH2:1]CN4CCCNCC4)c3c2)C1 c1nc2cncc([CH2:1][CH2:1]CN3CCCNCC3)c2cc1[CH2:0][N:0]1CCCC1 0.9999273 396.5390 1.0000000 1.0000
+ | 17.4987 26.6154 101.3769 0.9999396 O=C1CNCCN1C1CC[N:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCCC4)cc23)C1 O=C1CNCCN1C1CC[N:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCCC4)cc23)C1 0.9999396 394.5230 1.0000000 1.0000
+ | 24.2088 40.3667 83.2939 0.9660983 c1cn(CCN2CCC2)cc1C[NH:0][CH2:0]c1cnc2cncc([CH2:1][NH:1]CCN3CCOCC3)c2c1 c1cn(CCN2CCC2)cc1C[NH:0][CH2:0]c1cnc2cncc([CH2:1][NH:1]CCN3CCOCC3)c2c1 0.9660983 463.6300 1.0000000 1.0000
+ | 15.5045 26.0292 101.9705 0.9999979 CN1CCN(C)C([CH2:1][CH2:1]c2cncc3ncc([CH2:0][N:0]4CCCC4)cc23)C1 c1nc2cncc([CH2:1][CH2:1]C3CNCCN3)c2cc1[CH2:0][N:0]1CCCC1 0.9999979 353.5140 1.0000000 1.0000
+ | 10.4862 10.6849 116.6061 0.9944605 C[NH:1][CH2:1]c1cncc2ncc([CH2:0][N:0]3CCCC3)cc12 c1cc2cc([CH2:0][N:0]3CCCC3)cnc2cn1 0.9944605 256.3530 1.0000000 1.0000
+ | 17.4091 25.9038 102.0959 0.9999980 c1nc2cncc([CH2:1][N:1]3CCN4CCC3CC4)c2cc1[CH2:0][N:0]1CCCC1 c1nc2cncc([CH2:1][N:1]3CCN4CCC3CC4)c2cc1[CH2:0][N:0]1CCCC1 0.9999980 351.4980 1.0000000 1.0000
+ | 14.8418 17.5457 110.4540 0.9999977 OCCN1CC[N:0]([CH2:0]c2cnc3cncc([CH2:1][N:1]4CCCC4)c3c2)CC1 c1nc2cncc([CH2:1][N:1]3CCCC3)c2cc1[CH2:0][N:0]1CCNCC1 0.9999977 355.4860 1.0000000 1.0000
+18:12:53 <INFO> Score: 0.89 Agent NLL: 17.65 Valid: 100% Step: 27
+ | Agent Prior Target Score SMILES Scaffold Molecular weight Molecular weight (raw) Unwanted SMARTS Unwanted SMARTS (raw)
+ | 18.8842 31.3048 96.6943 0.9999933 CN1CC[N:1]([CH2:1]c2cncc3ncc([CH2:0][CH:0]4C=Cc5ccccc54)cc23)CC1 C1=C[CH:0]([CH2:0]c2cnc3cncc([CH2:1][N:1]4CCNCC4)c3c2)c2ccccc21 0.9999933 370.5000 1.0000000 1.0000
+ | 14.5068 20.7638 107.2359 0.9999977 CC1C[N:0]([CH2:0]c2cnc3cncc([CH2:1][N:1]4CCOCC4)c3c2)CCN1C c1nc2cncc([CH2:1][N:1]3CCOCC3)c2cc1[CH2:0][N:0]1CCNCC1 0.9999977 355.4860 1.0000000 1.0000
+ | 20.4388 29.2501 98.7486 0.9999903 CN1CCC([N:0](C)[CH2:0]c2cnc3cncc([CH2:1][N:1]4CCC4)c3c2)C1 c1nc2cncc([CH2:1][N:1]3CCC3)c2cc1[CH2:0][NH:0]C1CCNC1 0.9999903 325.4600 1.0000000 1.0000
+ | 9.6330 13.4622 -13.4622 0.0000000 c1nc2cncc([CH2:1][N:1]3CCNCC3)c2cc1[CH2:0][N:0]1CCCC1 c1nc2cncc([CH2:1][N:1]3CCNCC3)c2cc1[CH2:0][N:0]1CCCC1 0.9999651 311.4330 1.0000000 1.0000
+ | 14.3832 30.9684 96.9727 0.9995400 Cc1cc(CN2CC[N:1]([CH2:1]c3cncc4ncc([CH2:0][N:0]5CCCC5)cc34)CC2)ccn1 c1cc(CN2CC[N:1]([CH2:1]c3cncc4ncc([CH2:0][N:0]5CCCC5)cc34)CC2)ccn1 0.9995400 416.5730 1.0000000 1.0000
+ | 17.0179 19.0637 108.9285 0.9999394 c1nc2cncc([CH2:1][N:1]3CCCNCC3)c2cc1[CH2:0][N:0]1CCN(CC2CC2)CC1 c1nc2cncc([CH2:1][N:1]3CCCNCC3)c2cc1[CH2:0][N:0]1CCN(CC2CC2)CC1 0.9999394 394.5670 1.0000000 1.0000
+ | 13.9410 22.9224 105.0763 0.9999903 C=CCN1CC[N:0]([CH2:0]c2cnc3cncc([CH2:1][CH2:1]CN)c3c2)CC1 c1cc2cc([CH2:0][N:0]3CCNCC3)cnc2cn1 0.9999903 325.4600 1.0000000 1.0000
+ | 11.2253 21.6749 106.2606 0.9994964 c1ccc(CN2CC[N:0]([CH2:0]c3cnc4cncc([CH2:1][N:1]5CCOCC5)c4c3)CC2)cc1 c1ccc(CN2CC[N:0]([CH2:0]c3cnc4cncc([CH2:1][N:1]5CCOCC5)c4c3)CC2)cc1 0.9994964 417.5570 1.0000000 1.0000
+ | 15.5874 11.9958 -11.9958 0.0000000 CS(=O)(=O)N1CC[N:0]([CH2:0]c2cnc3cncc([CH2:1][c:1]4ccccc4)c3c2)CC1 c1cc[c:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCNCC4)cc23)cc1 0.9999275 396.5160 1.0000000 1.0000
+ | 14.3852 25.5716 102.3506 0.9993923 Cc1ccc(N2CC[N:0]([CH2:0]c3cnc4cncc([CH2:1][N:1]5CCSC5)c4c3)CC2)cc1 c1ccc(N2CC[N:0]([CH2:0]c3cnc4cncc([CH2:1][N:1]5CCSC5)c4c3)CC2)cc1 0.9993923 419.5980 0.0000000 0.0000
+18:12:53 <INFO> Terminating early in step = 26
+18:12:54 <INFO> Finished stage 1 >>>
+18:12:54 <INFO> Writing tabular data for stage to staged_learning_2.csv
+18:12:54 <INFO> Starting stage 2 <<<
+18:12:54 <INFO> Current GPU memory usage: 6916 MiB used, 25585 MiB free
+18:12:56 <INFO> Score: 0.16 Agent NLL: 18.79 Valid:  99% Step: 1
+ | Agent Prior Target Score SMILES Scaffold AnesthPot AnesthPot (raw)
+ | 25.5739 32.7525 -32.7516 0.0000072 CCN(CC)C1CC[N:1]([CH2:1]c2cncc3ncc([CH2:0][CH:0]4CCNCC4)cc23)C1 c1nc2cncc([CH2:1][N:1]3CCCC3)c2cc1[CH2:0][CH:0]1CCNCC1 0.0000072 -0.2142
+ | 20.3161 24.4510 13.6888 0.2979678 Cc1ccc(CN2CC[N:0]([CH2:0]c3cnc4cncc([CH2:1][N:1]5CCOCC5)c4c3)CC2)cc1C c1ccc(CN2CC[N:0]([CH2:0]c3cnc4cncc([CH2:1][N:1]5CCOCC5)c4c3)CC2)cc1 0.2979678 6.9417
+ | 20.8988 19.0773 15.7648 0.2722043 c1cc[c:1]([CH2:1]c2cncc3ncc([CH2:0][c:0]4cc[nH]n4)cc23)cc1 c1cc[c:1]([CH2:1]c2cncc3ncc([CH2:0][c:0]4cc[nH]n4)cc23)cc1 0.2722043 6.8593
+ | 22.5233 34.2360 -34.2001 0.0002804 c1nc2cncc([CH2:1][N:1]3CCOCC3)c2cc1[CH2:0][NH:0]CCN1CCN2CCC1C2 c1nc2cncc([CH2:1][N:1]3CCOCC3)c2cc1[CH2:0][NH:0]CCN1CCN2CCC1C2 0.0002804 2.1719
+ | 23.7303 30.6505 -30.6436 0.0000543 C1=CC2C[N:0]([CH2:0]c3cnc4cncc([CH2:1][N:1]5CCCC5)c4c3)CC2c2ccccc21 C1=CC2C[N:0]([CH2:0]c3cnc4cncc([CH2:1][N:1]5CCCC5)c4c3)CC2c2ccccc21 0.0000543 1.1024
+ | 28.2678 35.8970 -35.2708 0.0048926 NC1C[N:0]([CH2:0]c2cnc3cncc([CH2:1][CH:1]4CCCNC4)c3c2)CCc2ccc(O)cc21 c1ccc2c(c1)CC[N:0]([CH2:0]c1cnc3cncc([CH2:1][CH:1]4CCCNC4)c3c1)CC2 0.0048926 4.0375
+ | 12.8953 19.7049 -19.7049 0.0000000 CN1CC[N:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCC(O)C4)cc23)CC1 c1nc2cncc([CH2:1][N:1]3CCNCC3)c2cc1[CH2:0][N:0]1CCCC1 0.0017427 3.3630
+ | 17.7560 17.3461 100.2973 0.9190894 OCc1cccc[c:1]1[CH2:1]c1cncc2ncc([CH2:0][N:0]3CCCC3)cc12 c1cc[c:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCCC4)cc23)cc1 0.9190894 9.0830
+ | 21.0619 30.7354 -30.7353 0.0000009 O=C1NC[CH:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCC(n5ccnc5)CC4)cc23)N1 O=C1NC[CH:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCC(n5ccnc5)CC4)cc23)N1 0.0000009 -1.5453
+ | 13.1699 20.6430 90.4569 0.8679675 c1ccc(C(c2ccccc2)N2CC[N:0]([CH2:0]c3cnc4cncc([CH2:1][N:1]5CCNCC5)c4c3)CC2)cc1 c1ccc(C(c2ccccc2)N2CC[N:0]([CH2:0]c3cnc4cncc([CH2:1][N:1]5CCNCC5)c4c3)CC2)cc1 0.8679675 8.7267
+18:12:58 <INFO> Score: 0.13 Agent NLL: 18.35 Valid:  98% Step: 2
+ | Agent Prior Target Score SMILES Scaffold AnesthPot AnesthPot (raw)
+ | 14.8545 15.1756 -14.4980 0.0052937 CN1CC[N:1]([CH2:1]c2ccc3cncc([CH2:0][N:0]4CCN(S(C)(=O)=O)CC4)c3c2)CC1 c1cc2cncc([CH2:0][N:0]3CCNCC3)c2cc1[CH2:1][N:1]1CCNCC1 0.0052937 4.0891
+ | 21.8912 21.8136 -13.8421 0.0622776 O=[N+]([O-])CC[NH:1][CH2:1]c1ccc2cncc([CH2:0][O:0]c3ccccc3)c2c1 c1ccc([O:0][CH2:0]c2cncc3ccccc23)cc1 0.0622776 5.7334
+ | 20.6052 26.7738 1.7656 0.2229640 CCCN1CCC[N:1]([CH2:1]c2ccc3cncc([CH2:0][c:0]4ccccc4)c3c2)CC1CO c1cc[c:0]([CH2:0]c2cncc3ccc([CH2:1][N:1]4CCCNCC4)cc23)cc1 0.2229640 6.6867
+ | 18.9879 20.8937 -20.5447 0.0027267 NC(=O)C1CCC[N:0]1[CH2:0]c1cncc2ccc([CH2:1][N:1]3CCCCC3)cc12 c1cc2cncc([CH2:0][N:0]3CCCC3)c2cc1[CH2:1][N:1]1CCCCC1 0.0027267 3.6552
+ | 17.9230 25.6850 -25.4166 0.0020965 c1ccc([O:1][CH2:1]c2ccc3cncc([CH2:0][NH:0]C4CNC4)c3c2)nc1 c1ccc([O:1][CH2:1]c2ccc3cncc([CH2:0][NH:0]C4CNC4)c3c2)nc1 0.0020965 3.4836
+ | 10.4399 16.2866 -15.0208 0.0098888 c1cc2cncc([CH2:0][N:0]3CCCC3)c2cc1[CH2:1][N:1]1CCNCC1 c1cc2cncc([CH2:0][N:0]3CCCC3)c2cc1[CH2:1][N:1]1CCNCC1 0.0098888 4.4992
+ | 20.1623 19.1491 -19.1372 0.0000927 NC1CC[N:0]([CH2:0]c2cncc3ccc([CH2:1][CH2:1]CC(F)(F)F)cc23)C1 c1ccc2c([CH2:0][N:0]3CCCC3)cncc2c1 0.0000927 1.4510
+ | 18.8944 26.3488 -26.2721 0.0005998 NC1CC[N:0]([CH2:0]c2cncc3ccc([CH2:1][N:1]4CCN(Cc5ccc([N+](=O)[O-])cc5)CC4)cc23)CC1 c1ccc(CN2CC[N:1]([CH2:1]c3ccc4cncc([CH2:0][N:0]5CCCCC5)c4c3)CC2)cc1 0.0005998 2.6674
+ | 27.3662 33.1055 -33.1031 0.0000183 CN1CCC[N:0]([CH2:0]c2cncc3ccc([CH2:1][N:1]4CC5CNC(C4)C5C(=O)O)cc23)CC1 c1cc2cncc([CH2:0][N:0]3CCCNCC3)c2cc1[CH2:1][N:1]1CC2CNC(C2)C1 0.0000183 0.3931
+ | 14.1726 16.1361 -13.2434 0.0225990 OC1CC[N:1]([CH2:1]c2ccc3cncc([CH2:0][N:0]4CCOCC4)c3c2)C1 c1cc2cncc([CH2:0][N:0]3CCOCC3)c2cc1[CH2:1][N:1]1CCCC1 0.0225990 5.0460
+18:13:01 <INFO> Score: 0.15 Agent NLL: 18.59 Valid:  98% Step: 3
+ | Agent Prior Target Score SMILES Scaffold AnesthPot AnesthPot (raw)
+ | 30.8077 40.6251 -40.2869 0.0026425 FC1CC[N+:0]([CH2:0]c2ccc3cncc([CH2:1][N:1]4CCNCC4)c3c2)(c2ccncn2)C1 c1cc([N+:0]2([CH2:0]c3ccc4cncc([CH2:1][N:1]5CCNCC5)c4c3)CCCC2)ncn1 0.0026425 3.6348
+ | 27.8651 27.7490 -24.7621 0.0233354 Cc1c[c:1]([CH2:1]c2cncc3ccc([CH2:0][N:0]4CCC(C(N)=O)C4)cc23)no1 c1c[c:1]([CH2:1]c2cncc3ccc([CH2:0][N:0]4CCCC4)cc23)no1 0.0233354 5.0674
+ | 23.9801 33.7411 -22.9094 0.0846225 Cn1cccc1C=[CH:1][CH2:1]c1cncc2ccc([CH2:0][N:0]3CCCC3)cc12 C(c1ccc[nH]1)=[CH:1][CH2:1]c1cncc2ccc([CH2:0][N:0]3CCCC3)cc12 0.0846225 5.9488
+ | 15.7412 20.1598 -18.9558 0.0094057 CN1CCC[N:0]([CH2:0]c2ccc3cncc([CH2:1][N:1]4CCCNCC4)c3c2)CC1 c1cc2cncc([CH2:1][N:1]3CCCNCC3)c2cc1[CH2:0][N:0]1CCCNCC1 0.0094057 4.4662
+ | 16.1303 20.3505 -14.5902 0.0450028 c1cc2cncc([CH2:1][N:1]3CCNCC3)c2cc1[CH2:0][N:0]1CCC2(CCCNC2)CC1 c1cc2cncc([CH2:1][N:1]3CCNCC3)c2cc1[CH2:0][N:0]1CCC2(CCCNC2)CC1 0.0450028 5.5099
+ | 16.8693 20.8341 105.8268 0.9895384 O=C(c1ccc(O)cc1)N1CC[N:0]([CH2:0]c2ccc3cncc([CH2:1][NH2:1])c3c2)CC1 O=C(c1ccccc1)N1CC[N:0]([CH2:0]c2ccc3cnccc3c2)CC1 0.9895384 10.4638
+ | 18.6532 31.9485 -31.9483 0.0000020 CN1CC[N:1]([CH2:1]c2cncc3ccc([CH2:0][N:0]4CCC(C5CCNC5)C4)cc23)CC1 c1cc2cncc([CH2:1][N:1]3CCNCC3)c2cc1[CH2:0][N:0]1CCC(C2CCNC2)C1 0.0000020 -1.0617
+ | 17.9625 30.6343 83.8413 0.8943401 Cc1cccc(C(=O)N2CC[N:1]([CH2:1]c3cncc4ccc([CH2:0][N:0]5CCOCC5)cc34)CC2)c1 O=C(c1ccccc1)N1CC[N:1]([CH2:1]c2cncc3ccc([CH2:0][N:0]4CCOCC4)cc23)CC1 0.8943401 8.8914
+ | 15.3682 20.6115 -20.4111 0.0015654 NCC1CCC[N:0]1[CH2:0]c1ccc2cncc([CH2:1][c:1]3ccncc3)c2c1 c1c[c:1]([CH2:1]c2cncc3ccc([CH2:0][N:0]4CCCC4)cc23)ccn1 0.0015654 3.2929
+ | 25.8724 32.3622 -32.3616 0.0000042 CC1COCC[N:1]1[CH2:1]c1cncc2ccc([CH2:0][N:0]3CCCC(C(F)(F)F)C3)cc12 c1cc2cncc([CH2:1][N:1]3CCOCC3)c2cc1[CH2:0][N:0]1CCCCC1 0.0000042 -0.5710
+18:13:03 <INFO> Score: 0.16 Agent NLL: 19.58 Valid:  98% Step: 4
+ | Agent Prior Target Score SMILES Scaffold AnesthPot AnesthPot (raw)
+ | 9.1919 14.5663 -13.5806 0.0077011 CN1CC[N:0]([CH2:0]c2cncc3ncc([CH2:1][N:1]4CCOCC4)cc23)CC1 c1nc2cncc([CH2:0][N:0]3CCNCC3)c2cc1[CH2:1][N:1]1CCOCC1 0.0077011 4.3349
+ | 23.7066 25.4188 -25.4123 0.0000502 CN1CC[N:1]([CH2:1]c2cnc3cncc([CH2:0][N:0]4CCN(S(=O)(=O)C5CC5)C4)c3c2)CC1 O=S(=O)(C1CC1)N1CC[N:0]([CH2:0]c2cncc3ncc([CH2:1][N:1]4CCNCC4)cc23)C1 0.0000502 1.0509
+ | 22.1247 26.3126 -26.2923 0.0001584 CCN1CC[N:1]([CH2:1]c2cnc3cncc([CH2:0][N:0]4CCNCC4)c3c2)S(=O)(=O)C1 O=S1(=O)CNCC[N:1]1[CH2:1]c1cnc2cncc([CH2:0][N:0]3CCNCC3)c2c1 0.0001584 1.7995
+ | 15.3535 19.6646 -19.6245 0.0003127 CN1CC[N:1]([CH2:1]c2cnc3cncc([CH2:0][CH2:0]C4CNCCO4)c3c2)CC1 c1nc2cncc([CH2:0][CH2:0]C3CNCCO3)c2cc1[CH2:1][N:1]1CCNCC1 0.0003127 2.2429
+ | 18.3720 33.1025 -33.0330 0.0005430 CN1CCN(c2cc[c:1]([CH2:1]c3cnc4cncc([CH2:0][N:0]5CCN(C6CCN(C)C6)CC5)c4c3)cc2)CC1 c1c[c:1]([CH2:1]c2cnc3cncc([CH2:0][N:0]4CCN(C5CCNC5)CC4)c3c2)ccc1N1CCNCC1 0.0005430 2.6026
+ | 15.3918 28.9519 -16.1006 0.1004010 CN1CCN(c2ccc(C[NH:0][CH2:0]c3cncc4ncc([CH2:1][N:1]5CCNCC5)cc34)cc2)CC1 c1cc(N2CCNCC2)ccc1C[NH:0][CH2:0]c1cncc2ncc([CH2:1][N:1]3CCNCC3)cc12 0.1004010 6.0715
+ | 12.1355 13.5032 -13.5032 0.0000000 CN1CC[N:1]([CH2:1]c2cnc3cncc([CH2:0][N:0]4CCOCC4)c3c2)CC1 c1nc2cncc([CH2:0][N:0]3CCOCC3)c2cc1[CH2:1][N:1]1CCNCC1 0.0077011 4.3349
+ | 22.0231 36.0707 -36.0702 0.0000038 NC1CC[N:0]([CH2:0]c2cncc3ncc([CH2:1][N:1]4CC(CN5Cc6ccccc6C5=O)C4)cc23)C1 O=C1c2ccccc2CN1CC1C[N:1]([CH2:1]c2cnc3cncc([CH2:0][N:0]4CCCC4)c3c2)C1 0.0000038 -0.6326
+ | 18.8919 30.8932 -29.3728 0.0118784 CN1CCC[N:0]([CH2:0]c2cncc3ncc([CH2:1][N:1]4CCOCC4CO)cc23)CC1 c1nc2cncc([CH2:0][N:0]3CCCNCC3)c2cc1[CH2:1][N:1]1CCOCC1 0.0118784 4.6199
+ | 10.8389 19.1529 -18.9534 0.0015580 CN1CC[N:0]([CH2:0]c2cncc3ncc([CH2:1][N:1]4CCCN(C)CC4)cc23)CC1 c1nc2cncc([CH2:0][N:0]3CCNCC3)c2cc1[CH2:1][N:1]1CCCNCC1 0.0015580 3.2899
+18:13:06 <INFO> Score: 0.19 Agent NLL: 17.91 Valid:  98% Step: 5
+ | Agent Prior Target Score SMILES Scaffold AnesthPot AnesthPot (raw)
+ | 15.7155 21.7693 -21.7471 0.0001734 CN1CC[N:1]([CH2:1]c2ccc3cncc([CH2:0][N:0]4CCN(C)C(=O)C4=O)c3c2)CC1 O=C1NCC[N:0]([CH2:0]c2cncc3ccc([CH2:1][N:1]4CCNCC4)cc23)C1=O 0.0001734 1.8586
+ | 14.4834 19.6708 -18.9932 0.0052937 CN1CC[N:0]([CH2:0]c2cncc3ccc([CH2:1][N:1]4CCN(S(C)(=O)=O)CC4)cc23)CC1 c1cc2cncc([CH2:0][N:0]3CCNCC3)c2cc1[CH2:1][N:1]1CCNCC1 0.0052937 4.0891
+ | 26.4093 31.6241 -30.3073 0.0102876 O=C(O)CC1CNCC1N1CC[N:0]([CH2:0]c2cncc3ccc([CH2:1][N:1]4CCOCC4)cc23)CC1 c1cc2cncc([CH2:0][N:0]3CCN(C4CCNC4)CC3)c2cc1[CH2:1][N:1]1CCOCC1 0.0102876 4.5252
+ | 21.6047 27.7281 -27.7281 0.0000000 CN1CC[N:1]([CH2:1]c2ccc3cncc([CH2:0][O:0]C4CC(N)C4F)c3c2)CC1 c1cc2cncc([CH2:0][O:0]C3CCC3)c2cc1[CH2:1][N:1]1CCNCC1 0.0000000 -4.4393
+ | 13.2540 14.3070 6.9862 0.1663534 c1cc[c:1]([CH2:1]c2ccc3cncc([CH2:0][N:0]4CCCC4)c3c2)cc1 c1cc[c:1]([CH2:1]c2ccc3cncc([CH2:0][N:0]4CCCC4)c3c2)cc1 0.1663534 6.4501
+ | 17.4785 25.0866 -9.5031 0.1217461 CN1CCN(Cc2cccc([O:1][CH2:1]c3ccc4cncc([CH2:0][N:0]5CCC5)c4c3)c2)CC1 c1cc(CN2CCNCC2)cc([O:1][CH2:1]c2ccc3cncc([CH2:0][N:0]4CCC4)c3c2)c1 0.1217461 6.2128
+ | 20.5285 26.7874 -26.1572 0.0049236 CC(=O)N1CC[N:0]([CH2:0]c2cncc3ccc([CH2:1][NH:1]CC4CCCNC4)cc23)CC1 c1cc2cncc([CH2:0][N:0]3CCNCC3)c2cc1[CH2:1][NH:1]CC1CCCNC1 0.0049236 4.0416
+ | 26.3213 34.7493 -21.9862 0.0997117 CN(C)S(=O)(=O)CC=CCN1CC[N:0]([CH2:0]c2cncc3ccc([CH2:1][N:1]4CCNCC4)cc23)CC1 c1cc2cncc([CH2:0][N:0]3CCNCC3)c2cc1[CH2:1][N:1]1CCNCC1 0.0997117 6.0665
+ | 13.2183 18.7176 -17.9079 0.0063260 CCN1CC[N:0]([CH2:0]c2cncc3ccc([CH2:1][N:1]4CCNCC4)cc23)CC1 c1cc2cncc([CH2:0][N:0]3CCNCC3)c2cc1[CH2:1][N:1]1CCNCC1 0.0063260 4.2058
+ | 14.1867 21.3976 -21.3976 0.0000000 CN1CC[N:0]([CH2:0]c2cncc3ccc([CH2:1][CH:1]4CCN(C)C4)cc23)CC1 c1cc2cncc([CH2:0][N:0]3CCNCC3)c2cc1[CH2:1][CH:1]1CCNC1 0.0000529 1.0858
+18:13:07 <INFO> Score: 0.25 Agent NLL: 20.11 Valid:  98% Step: 6
+ | Agent Prior Target Score SMILES Scaffold AnesthPot AnesthPot (raw)
+ | 30.9457 43.7359 -43.7359 0.0000000 INVALID0 -- 0.0000000 0.0000
+ | 14.5437 20.8189 78.1803 0.7734307 CN1CC[N:1]([CH2:1]c2cncc3ncc([CH2:0][c:0]4ccccc4O)cc23)CC1 c1cc[c:0]([CH2:0]c2cnc3cncc([CH2:1][N:1]4CCNCC4)c3c2)cc1 0.7734307 8.2998
+ | 21.3182 29.0042 -28.2756 0.0056918 C[N:1](Cc1ccc(C#N)cc1)[CH2:1]c1cncc2ncc([CH2:0][N:0]3CCC(N)C3)cc12 c1ccc(C[NH:1][CH2:1]c2cncc3ncc([CH2:0][N:0]4CCCC4)cc23)cc1 0.0056918 4.1366
+ | 21.5954 30.7509 6.5739 0.2916001 NC1(c2ccncc2[O:0][CH2:0]c2cnc3cncc([CH2:1][N:1]4CCOCC4)c3c2)CC1 c1cc(C2CC2)c([O:0][CH2:0]c2cnc3cncc([CH2:1][N:1]4CCOCC4)c3c2)cn1 0.2916001 6.9218
+ | 30.2908 36.0196 -35.8537 0.0012959 Oc1ccc(C2CNC2C[NH:1][CH2:1]c2cncc3ncc([CH2:0][N:0]4CCC4)cc23)cn1 c1cncc(C2CNC2C[NH:1][CH2:1]c2cncc3ncc([CH2:0][N:0]4CCC4)cc23)c1 0.0012959 3.1697
+ | 23.5368 29.3196 -29.3196 0.0000002 O=C1CN2CCC1[N:1]([CH2:1]c1cncc3ncc([CH2:0][N:0]4CCC(F)C4)cc13)CC2 O=C1CN2CCC1[N:1]([CH2:1]c1cncc3ncc([CH2:0][N:0]4CCCC4)cc13)CC2 0.0000002 -2.6618
+ | 14.6678 23.1426 -23.0069 0.0010596 CCN1CC[N:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCCC4)cc23)CC1=O O=C1C[N:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCCC4)cc23)CCN1 0.0010596 3.0384
+ | 13.2029 19.0556 -18.9863 0.0005419 O=S(=O)(C1CC1)N1CC[N:0]([CH2:0]c2cnc3cncc([CH2:1][N:1]4CCOCC4)c3c2)CC1 O=S(=O)(C1CC1)N1CC[N:0]([CH2:0]c2cnc3cncc([CH2:1][N:1]4CCOCC4)c3c2)CC1 0.0005419 2.6012
+ | 21.9782 22.1165 -20.8292 0.0100565 CN1CCC(Oc2ccc([NH:1][CH2:1]c3cncc4ncc([CH2:0][N:0]5CCOCC5)cc34)cc2)CC1 c1nc2cncc([CH2:1][NH:1]c3ccc(OC4CCNCC4)cc3)c2cc1[CH2:0][N:0]1CCOCC1 0.0100565 4.5103
+ | 27.4542 31.3817 -26.3751 0.0391143 CN1CC[N:0]([CH2:0]c2cnc3cncc([CH2:1][CH2:1]CN4CC=C(c5cccnc5)C4=O)c3c2)CC1 O=C1C(c2cccnc2)=CCN1C[CH2:1][CH2:1]c1cncc2ncc([CH2:0][N:0]3CCNCC3)cc12 0.0391143 5.4145
+18:13:09 <INFO> Score: 0.25 Agent NLL: 19.83 Valid:  98% Step: 7
+ | Agent Prior Target Score SMILES Scaffold AnesthPot AnesthPot (raw)
+ | 32.7688 44.2444 -43.9902 0.0019861 O=[SH]12CNCC1CN(C[CH2:0][CH2:0]c1cncc3ccc([CH2:1][N:1]4CCCNCC4)cc13)CCN2c1ccccc1 O=[SH]12CNCC1CN(C[CH2:0][CH2:0]c1cncc3ccc([CH2:1][N:1]4CCCNCC4)cc13)CCN2c1ccccc1 0.0019861 3.4483
+ | 14.4982 24.3094 -20.5651 0.0292524 CN1CC[N:0]([CH2:0]c2cncc3ccc([CH2:1][O:1]CCN4CCOCC4)cc23)CC1 c1cc2cncc([CH2:0][N:0]3CCNCC3)c2cc1[CH2:1][O:1]CCN1CCOCC1 0.0292524 5.2186
+ | 28.2470 27.0169 100.9738 0.9999268 Cc1cccc([O:1][CH2:1]c2ccc3cncc([CH2:0][c:0]4cccc(CCC(=O)O)c4)c3c2)c1 c1cc[c:0]([CH2:0]c2cncc3ccc([CH2:1][O:1]c4ccccc4)cc23)cc1 0.9999268 13.7035
+ | 21.4554 23.3651 -14.7254 0.0674978 [CH3:0][CH2:0]c1cncc2ccc([CH2:1][N:1]3Cc4ccc(OC)nc4C3)cc12 c1cnc2c(c1)C[N:1]([CH2:1]c1ccc3cnccc3c1)C2 0.0674978 5.7895
+ | 15.0658 14.7477 -14.6343 0.0008859 c1cc2cncc([CH2:0][CH:0]3CCNC3)c2cc1[CH2:1][N:1]1CCOCC1 c1cc2cncc([CH2:0][CH:0]3CCNC3)c2cc1[CH2:1][N:1]1CCOCC1 0.0008859 2.9217
+ | 24.9770 35.2624 -22.9474 0.0962116 COc1ccccc1C[O:1][CH2:1]c1ccc2cncc([CH2:0][N:0]3CCNC(=O)C3)c2c1 O=C1C[N:0]([CH2:0]c2cncc3ccc([CH2:1][O:1]Cc4ccccc4)cc23)CCN1 0.0962116 6.0407
+ | 30.7319 40.3538 -40.3538 0.0000000 INVALID6 -- 0.0000000 0.0000
+ | 19.7576 27.0849 -26.5516 0.0041660 Fc1ccc(CCN2CC[N:1]([CH2:1]c3ccc4cncc([CH2:0][NH:0]C5CC5)c4c3)CC2)cc1 c1ccc(CCN2CC[N:1]([CH2:1]c3ccc4cncc([CH2:0][NH:0]C5CC5)c4c3)CC2)cc1 0.0041660 3.9323
+ | 38.6316 62.6708 14.3725 0.6019012 CN1CC[N:1]([CH2:1]c2ccc3cncc([CH2:0][O:0]c4ccc5c(c4)C4=C(COCC4)CN5CN4CC(O)C4)c3c2)CC1 c1cc2c(cc1[O:0][CH2:0]c1cncc3ccc([CH2:1][N:1]4CCNCC4)cc13)C1=C(COCC1)CN2CN1CCC1 0.6019012 7.7693
+ | 23.3287 28.1777 -28.1358 0.0003275 NC1CCC[N:0]([CH2:0]c2cncc3ccc([CH2:1][N:1]4CCCCC(CO)C4)cc23)C1 c1cc2cncc([CH2:0][N:0]3CCCCC3)c2cc1[CH2:1][N:1]1CCCCCC1 0.0003275 2.2729
+18:13:13 <INFO> Score: 0.28 Agent NLL: 21.10 Valid:  98% Step: 8
+ | Agent Prior Target Score SMILES Scaffold AnesthPot AnesthPot (raw)
+ | 16.1345 15.2319 -15.2254 0.0000508 FC1CC[N:1]([CH2:1]c2cncc3ncc([CH2:0][N:0]4CCNCC4)cc23)C1 c1nc2cncc([CH2:1][N:1]3CCCC3)c2cc1[CH2:0][N:0]1CCNCC1 0.0000508 1.0586
+ | 21.5115 24.1426 -24.0567 0.0006710 CN1CCOC(CC[NH:1][CH2:1]c2cncc3ncc([CH2:0][N:0]4CCNCC4)cc23)CC1 c1nc2cncc([CH2:1][NH:1]CCC3CCNCCO3)c2cc1[CH2:0][N:0]1CCNCC1 0.0006710 2.7405
+ | 26.0923 31.9670 -31.9577 0.0000727 c1cc(OC2CNCC2C[O:1][CH2:1]c2cncc3ncc([CH2:0][N:0]4CCOCC4)cc23)ncn1 c1cc(OC2CNCC2C[O:1][CH2:1]c2cncc3ncc([CH2:0][N:0]4CCOCC4)cc23)ncn1 0.0000727 1.2925
+ | 21.2894 25.5666 -16.7829 0.0686229 c1cn2c(n1)C[N:0]([CH2:0]c1cnc3cncc([CH2:1][NH:1]CCCN4CCOCC4)c3c1)CC2 c1cn2c(n1)C[N:0]([CH2:0]c1cnc3cncc([CH2:1][NH:1]CCCN4CCOCC4)c3c1)CC2 0.0686229 5.8010
+ | 26.4151 31.7045 -31.5828 0.0009510 c1ccc2c(c1)cnn2CC1CCC[N:0]1[CH2:0]c1cnc2cncc([CH2:1][NH2:1])c2c1 c1ccc2c(c1)cnn2CC1CCC[N:0]1[CH2:0]c1cnc2cnccc2c1 0.0009510 2.9679
+ | 32.0695 40.7700 -37.7026 0.0239634 N#CC1([NH:1][CH2:1]c2cncc3ncc([CH2:0][N:0]4CN(CCN)C4)cc23)COC1 c1nc2cncc([CH2:1][NH:1]C3COC3)c2cc1[CH2:0][N:0]1CNC1 0.0239634 5.0851
+ | 28.8873 31.9130 95.0186 0.9916532 CS(=O)(=O)C(c1ccccc1)c1cc[c:0]([CH2:0]c2cnc3cncc([CH2:1][N:1]4CCOCC4)c3c2)cc1 c1ccc(Cc2cc[c:0]([CH2:0]c3cnc4cncc([CH2:1][N:1]5CCOCC5)c4c3)cc2)cc1 0.9916532 10.6123
+ | 22.5675 41.2327 -35.1163 0.0477847 Oc1ccccc1N1CC2CN(CC[N:1]([CH2:1]c3cncc4ncc([CH2:0][N:0]5CCCC5)cc34)C2)C1 c1ccc(N2CC3CN(CC[N:1]([CH2:1]c4cncc5ncc([CH2:0][N:0]6CCCC6)cc45)C3)C2)cc1 0.0477847 5.5508
+ | 15.1196 21.6944 -21.5500 0.0011278 O=C1NCC[N:1]1[CH2:1]c1cncc2ncc([CH2:0][N:0]3CCCC3)cc12 O=C1NCC[N:1]1[CH2:1]c1cncc2ncc([CH2:0][N:0]3CCCC3)cc12 0.0011278 3.0791
+ | 24.7474 34.6441 -34.4156 0.0017849 C[N:1](C)[CH2:1]c1cncc2ncc([CH2:0][N:0]3CCC(Nc4ccc(N5CCC5)cc4)C3)cc12 c1cc2cc([CH2:0][N:0]3CCC(Nc4ccc(N5CCC5)cc4)C3)cnc2cn1 0.0017849 3.3786
+18:13:15 <INFO> Score: 0.40 Agent NLL: 20.33 Valid:  99% Step: 9
+ | Agent Prior Target Score SMILES Scaffold AnesthPot AnesthPot (raw)
+ | 27.0615 37.2138 -28.0545 0.0715574 Cc1ccc(S(=O)(=O)N2CCCC2)cc1[O:1][CH2:1]c1cnc2cncc([CH2:0][N:0]3CCN(C)C(=O)C3)c2c1 O=C1C[N:0]([CH2:0]c2cncc3ncc([CH2:1][O:1]c4cccc(S(=O)(=O)N5CCCC5)c4)cc23)CCN1 0.0715574 5.8303
+ | 16.6133 28.9835 -28.9389 0.0003484 Cc1ccc(C2C[N:1]([CH2:1]c3cnc4cncc([CH2:0][N:0]5CCN(C)CC5)c4c3)C2)cn1 c1cncc(C2C[N:1]([CH2:1]c3cnc4cncc([CH2:0][N:0]5CCNCC5)c4c3)C2)c1 0.0003484 2.3134
+ | 15.2648 17.9636 -16.5927 0.0107104 C#CC[NH:0][CH2:0]c1cncc2ncc([CH2:1][N:1]3CCN(C)CC3)cc12 c1cc2cc([CH2:1][N:1]3CCNCC3)cnc2cn1 0.0107104 4.5517
+ | 30.7830 38.1983 88.3488 0.9886488 NC1=NCC(=O)N1c1ccc([O:1][CH2:1]c2cnc3cncc([CH2:0][CH2:0]c4cccc(O)c4)c3c2)cc1 O=C1CN=CN1c1ccc([O:1][CH2:1]c2cnc3cncc([CH2:0][CH2:0]c4ccccc4)c3c2)cc1 0.9886488 10.4100
+ | 13.4222 21.3714 -0.8743 0.1601337 Cc1ccc(C[NH:1][CH2:1]c2cnc3cncc([CH2:0][N:0]4CCCC4)c3c2)cc1 c1ccc(C[NH:1][CH2:1]c2cnc3cncc([CH2:0][N:0]4CCCC4)c3c2)cc1 0.1601337 6.4204
+ | 20.8190 37.1273 72.5364 0.8567478 c1cc(-c2ccc(CNCC[NH:1][CH2:1]c3cnc4cncc([CH2:0][N:0]5CCCC5)c4c3)cc2)ccn1 c1cc(-c2ccc(CNCC[NH:1][CH2:1]c3cnc4cncc([CH2:0][N:0]5CCCC5)c4c3)cc2)ccn1 0.8567478 8.6651
+ | 13.1296 15.4731 -10.1415 0.0416531 CN1CC[N:0]([CH2:0]c2cncc3ncc([CH2:1][c:1]4ccc(F)cc4)cc23)CC1 c1cc[c:1]([CH2:1]c2cnc3cncc([CH2:0][N:0]4CCNCC4)c3c2)cc1 0.0416531 5.4572
+ | 13.9431 20.5151 78.4840 0.7734307 CN1CC[N:0]([CH2:0]c2cncc3ncc([CH2:1][c:1]4ccc(O)cc4)cc23)CC1 c1cc[c:1]([CH2:1]c2cnc3cncc([CH2:0][N:0]4CCNCC4)c3c2)cc1 0.7734307 8.2998
+ | 15.2037 22.6259 -22.5137 0.0008765 Cc1cccc([O:1][CH2:1]c2cnc3cncc([CH2:0][N:0]4CC(N)C4)c3c2)c1 c1ccc([O:1][CH2:1]c2cnc3cncc([CH2:0][N:0]4CCC4)c3c2)cc1 0.0008765 2.9147
+ | 27.3728 43.6230 -43.6229 0.0000002 CN1CC[N:0]([CH2:0]c2cncc3ncc([CH2:1][N:1]4CC(OC5CNC5)C4c4ccccc4)cc23)CC1 c1ccc(C2C(OC3CNC3)C[N:1]2[CH2:1]c2cnc3cncc([CH2:0][N:0]4CCNCC4)c3c2)cc1 0.0000002 -2.6788
+18:13:18 <INFO> Score: 0.43 Agent NLL: 21.79 Valid:  99% Step: 10
+ | Agent Prior Target Score SMILES Scaffold AnesthPot AnesthPot (raw)
+ | 41.0728 47.6262 29.3901 0.6016905 FCC1=NCc2nn([CH2:1][CH2:1]c3cncc4ccc([CH2:0][CH2:0]c5ccc(F)cc5)cc34)cc21 C1=NCc2nn([CH2:1][CH2:1]c3cncc4ccc([CH2:0][CH2:0]c5ccccc5)cc34)cc21 0.6016905 7.7687
+ | 19.8560 25.9569 -19.7003 0.0488800 CN1CC[CH:1]([CH2:1]c2cncc3ccc([CH2:0][c:0]4ccc(O)cc4)cc23)C1=O O=C1NCC[CH:1]1[CH2:1]c1cncc2ccc([CH2:0][c:0]3ccccc3)cc12 0.0488800 5.5663
+ | 26.7288 25.0608 -24.9785 0.0006430 CN1C(=O)C(=O)NC12CC[N:0]([CH2:0]c1ccc3cncc([CH2:1][CH3:1])c3c1)CC2 O=C1NC2(CC[N:0]([CH2:0]c3ccc4cnccc4c3)CC2)NC1=O 0.0006430 2.7128
+ | 21.6636 29.8277 94.7770 0.9734746 OCC1(O)CC[N:0]([CH2:0]c2ccc3cncc([CH2:1][N:1]4CCSC4)c3c2)C1 c1cc2cncc([CH2:1][N:1]3CCSC3)c2cc1[CH2:0][N:0]1CCCC1 0.9734746 9.8470
+ | 40.5751 47.4969 80.4909 0.9999042 O=S(=O)(N1CCOc2cccc(Cl)c2O1)[NH:1][CH2:1]c1cncc2ccc([CH2:0][C:0]#CC3(O)CCC3)cc12 O=S(=O)(N1CCOc2ccccc2O1)[NH:1][CH2:1]c1cncc2ccc([CH2:0][C:0]#CC3CCC3)cc12 0.9999042 13.5280
+ | 23.4206 35.9298 -35.7624 0.0013077 c1ccc(N2CC[N:1]([CH2:1]c3cncc4ccc([CH2:0][N:0]5CCC(n6ccnc6)C5)cc34)CC2)nc1 c1ccc(N2CC[N:1]([CH2:1]c3cncc4ccc([CH2:0][N:0]5CCC(n6ccnc6)C5)cc34)CC2)nc1 0.0013077 3.1756
+ | 35.4390 51.3003 76.6997 0.9999998 ON=CN1CC[N:0]([CH2:0]c2ccc3cncc([CH2:1][c:1]4ccc(O)cc4-c4ccc5cnccc5c4)c3c2)CC1 c1cc[c:1]([CH2:1]c2cncc3ccc([CH2:0][N:0]4CCNCC4)cc23)c(-c2ccc3cnccc3c2)c1 0.9999998 17.5092
+ | 19.4362 21.1236 6.5857 0.2164784 CN1CCC[N:0]([CH2:0]c2ccc3cncc([CH2:1][CH2:1]c4ccccc4)c3c2)CCC1 c1ccc([CH2:1][CH2:1]c2cncc3ccc([CH2:0][N:0]4CCCNCCC4)cc23)cc1 0.2164784 6.6620
+ | 28.8304 35.6524 -35.3344 0.0024850 CC1CN(Cc2ccccc2)CCC[N:0]1[CH2:0]c1ccc2cncc([CH2:1][c:1]3ncnn3C)c2c1 c1ccc(CN2CCC[N:0]([CH2:0]c3ccc4cncc([CH2:1][c:1]5ncn[nH]5)c4c3)CC2)cc1 0.0024850 3.5946
+ | 17.2086 29.7713 -14.1745 0.1218498 CN1CC[N:0]([CH2:0]c2ccc3cncc([CH2:1][N:1]4COc5ccccc54)c3c2)CC1 c1ccc2c(c1)OC[N:1]2[CH2:1]c1cncc2ccc([CH2:0][N:0]3CCNCC3)cc12 0.1218498 6.2134
+18:13:20 <INFO> Score: 0.50 Agent NLL: 21.79 Valid:  97% Step: 11
+ | Agent Prior Target Score SMILES Scaffold AnesthPot AnesthPot (raw)
+ | 15.8052 19.2985 46.4033 0.5132951 N#Cc1ccc([O:1][CH2:1]c2cnc3cncc([CH2:0][N:0]4CCOCC4)c3c2)cc1 c1ccc([O:1][CH2:1]c2cnc3cncc([CH2:0][N:0]4CCOCC4)c3c2)cc1 0.5132951 7.5347
+ | 19.5360 26.2950 -26.1813 0.0008883 Cc1cc([O:1][CH2:1]c2cnc3cncc([CH2:0][NH:0]C4CCN(C)C4)c3c2)ccn1 c1cc([O:1][CH2:1]c2cnc3cncc([CH2:0][NH:0]C4CCNC4)c3c2)ccn1 0.0008883 2.9234
+ | 27.0575 31.4880 47.0146 0.6133016 Fc1cnc(F)c(-c2cccc([O:1][CH2:1]c3cnc4cncc([CH2:0][N:0]5CCNCC5)c4c3)c2)c1 c1cncc(-c2cccc([O:1][CH2:1]c3cnc4cncc([CH2:0][N:0]5CCNCC5)c4c3)c2)c1 0.6133016 7.8005
+ | 15.2725 23.8600 -2.4974 0.1668958 O=C1C[N:1]([CH2:1]c2cnc3cncc([CH2:0][N:0]4CCOCC4)c3c2)CN1CCO O=C1C[N:1]([CH2:1]c2cnc3cncc([CH2:0][N:0]4CCOCC4)c3c2)CN1 0.1668958 6.4526
+ | 15.6452 18.7889 -15.7824 0.0234889 CN1CC[N:0]([CH2:0]c2cncc3ncc([CH2:1][NH:1]c4ccc(F)cn4)cc23)CC1 c1ccc([NH:1][CH2:1]c2cnc3cncc([CH2:0][N:0]4CCNCC4)c3c2)nc1 0.0234889 5.0718
+ | 33.4403 51.8504 -36.8157 0.1174592 Cc1ccc(-c2sc3cncnc3[c:1]2[CH2:1]c2cnc3cncc([CH2:0][N:0]4CC(N5CCOCC5)C4)c3c2)cc1 c1ccc(-c2sc3cncnc3[c:1]2[CH2:1]c2cnc3cncc([CH2:0][N:0]4CC(N5CCOCC5)C4)c3c2)cc1 0.1174592 6.1862
+ | 24.3070 41.9611 84.6209 0.9889222 O=C1CN(CCO)C[N:0]1[CH2:0]c1cncc2ncc([CH2:1][O:1]c3ccc(O)cc3)cc12 O=C1CNC[N:0]1[CH2:0]c1cncc2ncc([CH2:1][O:1]c3ccccc3)cc12 0.9889222 10.4261
+ | 15.8700 24.0971 59.4649 0.6528280 CS(=O)(=O)N1CC[N:0]([CH2:0]c2cncc3ncc([CH2:1][O:1]c4ccc5c(c4)OCO5)cc23)CC1 c1nc2cncc([CH2:0][N:0]3CCNCC3)c2cc1[CH2:1][O:1]c1ccc2c(c1)OCO2 0.6528280 7.9114
+ | 28.7049 38.9867 40.4085 0.6202751 Cc1ccc(S(=O)(=O)N2CCC[N:0]([CH2:0]c3cncc4ncc([CH2:1][N+:1]5(C)CCCNCC5)cc34)CC2)cc1 O=S(=O)(c1ccccc1)N1CCC[N:0]([CH2:0]c2cncc3ncc([CH2:1][NH+:1]4CCCNCC4)cc23)CC1 0.6202751 7.8197
+ | 19.4103 24.5650 -22.3882 0.0170064 CCC1C[N:1]([CH2:1]c2cnc3cncc([CH2:0][N:0]4CCOCC4)c3c2)CCN1CCO c1nc2cncc([CH2:0][N:0]3CCOCC3)c2cc1[CH2:1][N:1]1CCNCC1 0.0170064 4.8571
+18:13:23 <INFO> Score: 0.55 Agent NLL: 21.45 Valid:  99% Step: 12
+ | Agent Prior Target Score SMILES Scaffold AnesthPot AnesthPot (raw)
+ | 29.1743 41.8312 -39.3154 0.0196549 O[C:0]1([CH2:0]c2cncc3ccc([CH2:1][O:1]c4ccccc4)cc23)CN2CCOCC2CNC1CF c1ccc([O:1][CH2:1]c2ccc3cncc([CH2:0][CH:0]4CNCC5COCCN5C4)c3c2)cc1 0.0196549 4.9531
+ | 27.7183 24.9007 103.0790 0.9998413 O=C(NO)c1cccnc1[NH:1][CH2:1]c1ccc2cncc([CH2:0][CH2:0]Cc3ccccc3)c2c1 c1ccc(C[CH2:0][CH2:0]c2cncc3ccc([CH2:1][NH:1]c4ccccn4)cc23)cc1 0.9998413 13.1988
+ | 14.2818 14.3229 -13.8052 0.0040449 C[N:0](C)[CH2:0]c1cncc2ccc([CH2:1][N:1]3CCN(C)CC3)cc12 c1cc2cc([CH2:1][N:1]3CCNCC3)ccc2cn1 0.0040449 3.9130
+ | 17.7527 21.8810 103.2551 0.9776257 O=C(c1ccco1)N1CC[N:1]([CH2:1]c2ccc3cncc([CH2:0][c:0]4ccccc4)c3c2)CC1 O=C(c1ccco1)N1CC[N:1]([CH2:1]c2ccc3cncc([CH2:0][c:0]4ccccc4)c3c2)CC1 0.9776257 9.9606
+ | 26.7317 36.9275 91.0698 0.9999789 Oc1cc([O:1][CH2:1]c2ccc3cncc([CH2:0][c:0]4ccccc4)c3c2)ccc1C#Cc1cccnc1 C(#Cc1cccnc1)c1ccc([O:1][CH2:1]c2ccc3cncc([CH2:0][c:0]4ccccc4)c3c2)cc1 0.9999789 14.5142
+ | 42.0041 60.7586 -58.3683 0.0186736 C#Cc1cc([O:1][CH2:1]c2ccc3cncc([CH2:0][N:0]4CCN(C)CC4C)c3c2)cc2c1OCC(c1ccncc1)O2 c1cc(C2COc3ccc([O:1][CH2:1]c4ccc5cncc([CH2:0][N:0]6CCNCC6)c5c4)cc3O2)ccn1 0.0186736 4.9191
+ | 32.4620 45.5693 -45.5450 0.0001897 CC1COCC[N:0]1[CH2:0]c1cncc2ccc([CH2:1][N:1]3CCN(C4CCN(C)c5ccccc5O4)CC3)cc12 c1ccc2c(c1)NCCC(N1CC[N:1]([CH2:1]c3ccc4cncc([CH2:0][N:0]5CCOCC5)c4c3)CC1)O2 0.0001897 1.9172
+ | 29.3612 33.3197 -29.0796 0.0331260 FC1(F)CC([NH:0][CH2:0]c2cncc3ccc([CH2:1][c:1]4ccccc4)cc23)OCO1 c1cc[c:1]([CH2:1]c2ccc3cncc([CH2:0][NH:0]C4CCOCO4)c3c2)cc1 0.0331260 5.3022
+ | 19.8540 22.5862 -19.1636 0.0267389 O=c1[nH]cccc1[O:1][CH2:1]c1ccc2cncc([CH2:0][N:0]3CCNCC3)c2c1 O=c1[nH]cccc1[O:1][CH2:1]c1ccc2cncc([CH2:0][N:0]3CCNCC3)c2c1 0.0267389 5.1584
+ | 13.0074 18.1717 -18.1717 0.0000000 Clc1ccc([O:1][CH2:1]c2ccc3cncc([CH2:0][N:0]4CCOCC4)c3c2)cc1 c1ccc([O:1][CH2:1]c2ccc3cncc([CH2:0][N:0]4CCOCC4)c3c2)cc1 0.5455088 7.6189
+18:13:25 <INFO> Score: 0.62 Agent NLL: 22.22 Valid:  92% Step: 13
+ | Agent Prior Target Score SMILES Scaffold AnesthPot AnesthPot (raw)
+ | 24.4282 23.0375 -17.9414 0.0398140 [CH3:0][CH2:0]c1cncc2ncc([CH2:1][N:1]3CCN(c4ccc(N)cc4F)CC3)cc12 c1ccc(N2CC[N:1]([CH2:1]c3cnc4cnccc4c3)CC2)cc1 0.0398140 5.4265
+ | 33.2410 60.5383 60.1974 0.9432482 CN1CCN(C2(c3cc[c:0]([CH2:0]c4cncc5ncc([CH2:1][N:1]6CCOCC6)cc45)o3)CCc3ccccc32)CC1 c1ccc2c(c1)CCC2(c1cc[c:0]([CH2:0]c2cncc3ncc([CH2:1][N:1]4CCOCC4)cc23)o1)N1CCNCC1 0.9432482 9.3310
+ | 19.7729 30.1026 -26.6832 0.0267140 COc1ccc([O:1][CH2:1]c2cnc3cncc([CH2:0][N:0]4CCNC4=O)c3c2)cc1 O=C1NCC[N:0]1[CH2:0]c1cncc2ncc([CH2:1][O:1]c3ccccc3)cc12 0.0267140 5.1577
+ | 21.3512 32.8436 -32.6583 0.0014475 Fc1cccc2c1[N:1]([CH2:1]c1cnc3cncc([CH2:0][N:0]4CC(F)C4)c3c1)CCO2 c1ccc2c(c1)OCC[N:1]2[CH2:1]c1cnc2cncc([CH2:0][N:0]3CCC3)c2c1 0.0014475 3.2419
+ | 20.7012 23.8300 95.8324 0.9348626 CC(O)[CH2:1][CH2:1]c1cnc2cncc([CH2:0][N:0]3CCN(c4ccc(F)cc4)CC3)c2c1 c1ccc(N2CC[N:0]([CH2:0]c3cncc4ncccc34)CC2)cc1 0.9348626 9.2354
+ | 35.3679 43.3224 -43.3224 0.0000000 INVALID5 -- 0.0000000 0.0000
+ | 10.3789 14.3769 19.4310 0.2641239 c1ccc([O:1][CH2:1]c2cnc3cncc([CH2:0][N:0]4CCOCC4)c3c2)cc1 c1ccc([O:1][CH2:1]c2cnc3cncc([CH2:0][N:0]4CCOCC4)c3c2)cc1 0.2641239 6.8325
+ | 23.5227 36.2021 -35.0733 0.0088186 CN1C[N:0]([CH2:0]c2cncc3ncc([CH2:1][N:1]4CCN(S(=O)(=O)c5ccccn5)CC4)cc23)CC1=O O=C1C[N:0]([CH2:0]c2cncc3ncc([CH2:1][N:1]4CCN(S(=O)(=O)c5ccccn5)CC4)cc23)CN1 0.0088186 4.4239
+ | 10.9275 15.9367 -10.5383 0.0421757 CN1CC[N:0]([CH2:0]c2cncc3ncc([CH2:1][O:1]c4ccc(F)cc4)cc23)CC1 c1ccc([O:1][CH2:1]c2cnc3cncc([CH2:0][N:0]4CCNCC4)c3c2)cc1 0.0421757 5.4657
+ | 41.9316 52.0047 -52.0047 0.0000000 INVALID9 -- 0.0000000 0.0000
+18:13:28 <INFO> Score: 0.69 Agent NLL: 21.72 Valid:  95% Step: 14
+ | Agent Prior Target Score SMILES Scaffold AnesthPot AnesthPot (raw)
+ | 16.3834 20.0146 81.3712 0.7920763 Cc1cc[c:0]([CH2:0]c2cncc3ccc([CH2:1][CH2:1]c4ccccc4)cc23)cn1 c1ccc([CH2:1][CH2:1]c2ccc3cncc([CH2:0][c:0]4cccnc4)c3c2)cc1 0.7920763 8.3713
+ | 18.6827 22.1166 6.5297 0.2237996 C=CC[O:0][CH2:0]c1cncc2ccc([CH2:1][c:1]3ccc(OC)cc3)cc12 c1cc[c:1]([CH2:1]c2ccc3cnccc3c2)cc1 0.2237996 6.6898
+ | 32.2069 33.0954 -31.6059 0.0116368 O=C1CC[N:1]([CH2:1]c2ccc3cncc([CH2:0][CH:0]4CNC4)c3c2)c2c1ccc1ccccc21 O=C1CC[N:1]([CH2:1]c2ccc3cncc([CH2:0][CH:0]4CNC4)c3c2)c2c1ccc1ccccc21 0.0116368 4.6064
+ | 20.3828 28.6587 -19.5285 0.0713298 N#Cc1ccc([O:1][CH2:1]c2ccc3cncc([CH2:0][NH:0]CC4CCCO4)c3c2)cc1 c1ccc([O:1][CH2:1]c2ccc3cncc([CH2:0][NH:0]CC4CCCO4)c3c2)cc1 0.0713298 5.8281
+ | 25.2502 40.1080 87.8642 0.9997826 OC1(C[O:0][CH2:0]c2cncc3ccc([CH2:1][c:1]4ccc5c(c4)OCO5)cc23)CN(c2ccccc2)C1 c1ccc(N2CC(C[O:0][CH2:0]c3cncc4ccc([CH2:1][c:1]5ccc6c(c5)OCO6)cc34)C2)cc1 0.9997826 12.9941
+ | 20.5919 24.1806 -24.0411 0.0010894 Fc1ccc(C2CC2[NH:0][CH2:0]c2cncc3ccc([CH2:1][c:1]4ccccc4)cc23)cc1 c1ccc(C2CC2[NH:0][CH2:0]c2cncc3ccc([CH2:1][c:1]4ccccc4)cc23)cc1 0.0010894 3.0565
+ | 24.8929 28.9842 -28.0525 0.0072789 C=CS(=O)(=O)[NH:1][CH2:1]c1ccc2cncc([CH2:0][N:0]3CCCC3c3ccccc3)c2c1 c1ccc(C2CCC[N:0]2[CH2:0]c2cncc3ccccc23)cc1 0.0072789 4.2979
+ | 20.0654 22.9217 -22.4252 0.0038791 c1ccc(C2C[N:1]([CH2:1]c3ccc4cncc([CH2:0][N:0]5CCOCC5)c4c3)C2)nc1 c1ccc(C2C[N:1]([CH2:1]c3ccc4cncc([CH2:0][N:0]5CCOCC5)c4c3)C2)nc1 0.0038791 3.8856
+ | 28.4807 37.5219 85.1992 0.9587585 COc1ccc([CH2:1][CH2:1]c2ccc3cncc([CH2:0][N:0]4CCc5ccc(C)cc5O4)c3c2)cc1OC c1ccc([CH2:1][CH2:1]c2ccc3cncc([CH2:0][N:0]4CCc5ccccc5O4)c3c2)cc1 0.9587585 9.5496
+ | 16.2218 31.1439 54.5083 0.6691582 CN1CC[N:0]([CH2:0]c2cncc3ccc([CH2:1][O:1]c4ccccc4)cc23)CC1c1ccc(O)cc1 c1ccc(C2C[N:0]([CH2:0]c3cncc4ccc([CH2:1][O:1]c5ccccc5)cc34)CCN2)cc1 0.6691582 7.9589
+18:13:30 <INFO> Score: 0.76 Agent NLL: 21.61 Valid:  98% Step: 15
+ | Agent Prior Target Score SMILES Scaffold AnesthPot AnesthPot (raw)
+ | 27.2589 43.8991 84.0313 0.9994558 O=C1Oc2c([O:1][CH2:1]c3ccc4cncc([CH2:0][c:0]5ccccc5)c4c3)ccc(O)c2OC1CO O=C1COc2cccc([O:1][CH2:1]c3ccc4cncc([CH2:0][c:0]5ccccc5)c4c3)c2O1 0.9994558 12.3960
+ | 19.8561 27.7611 25.5942 0.4168388 c1cc[c:0]([CH2:0]c2cncc3ccc([CH2:1][N:1]4CCN(c5cccnc5)CC4)cc23)nc1 c1cc[c:0]([CH2:0]c2cncc3ccc([CH2:1][N:1]4CCN(c5cccnc5)CC4)cc23)nc1 0.4168388 7.2813
+ | 17.3522 24.5790 84.9794 0.8559247 COc1ccc(C2(O)C[N:0]([CH2:0]c3cncc4ccc([CH2:1][N:1]5CCN(C)CC5)cc34)C2)cc1 c1ccc(C2C[N:0]([CH2:0]c3cncc4ccc([CH2:1][N:1]5CCNCC5)cc34)C2)cc1 0.8559247 8.6608
+ | 30.9748 46.4401 81.4593 0.9992138 COc1c[c:1]([CH2:1]c2ccc3cncc([CH2:0][N:0]4CCN(Cc5ccc6ccccc6c5)CC4)c3c2)ccc1Oc1ccccc1 c1ccc(Oc2cc[c:1]([CH2:1]c3ccc4cncc([CH2:0][N:0]5CCN(Cc6ccc7ccccc7c6)CC5)c4c3)cc2)cc1 0.9992138 12.1562
+ | 22.2622 31.5795 65.2684 0.7566239 N#Cc1ccc(N2CC[N:0]([CH2:0]c3cncc4ccc([CH2:1][O:1]c5ccc(F)cc5F)cc34)CC2)nc1 c1ccc([O:1][CH2:1]c2ccc3cncc([CH2:0][N:0]4CCN(c5ccccn5)CC4)c3c2)cc1 0.7566239 8.2389
+ | 12.2624 16.7527 111.1008 0.9988556 O=C(O)c1ccc([O:1][CH2:1]c2ccc3cncc([CH2:0][N:0]4CCOCC4)c3c2)cc1 c1ccc([O:1][CH2:1]c2ccc3cncc([CH2:0][N:0]4CCOCC4)c3c2)cc1 0.9988556 11.9114
+ | 16.9563 25.2299 102.5919 0.9986078 Cc1ccc([O:0][CH2:0]c2cncc3ccc([CH2:1][NH:1]Cc4ccc(CO)cc4)cc23)cc1 c1ccc(C[NH:1][CH2:1]c2ccc3cncc([CH2:0][O:0]c4ccccc4)c3c2)cc1 0.9986078 11.7835
+ | 29.4686 40.6385 -35.3065 0.0416564 COc1cccc([O:1][CH2:1]c2ccc3cncc([CH2:0][c:0]4ccc(N5CC(N(C)C)C5)nc4)c3c2)c1 c1ccc([O:1][CH2:1]c2ccc3cncc([CH2:0][c:0]4ccc(N5CCC5)nc4)c3c2)cc1 0.0416564 5.4572
+ | 25.7392 38.5660 88.7300 0.9945004 O=C1OCc2ccccc2[N:0]1[CH2:0]c1cncc2ccc([CH2:1][O:1]c3cc(O)ccc3F)cc12 O=C1OCc2ccccc2[N:0]1[CH2:0]c1cncc2ccc([CH2:1][O:1]c3ccccc3)cc12 0.9945004 10.8859
+ | 24.4200 32.0327 95.9634 0.9999699 OCCCC#Cc1ccc(C[NH:1][CH2:1]c2ccc3cncc([CH2:0][N:0]4CCN(CCO)CC4)c3c2)cc1 c1ccc(C[NH:1][CH2:1]c2ccc3cncc([CH2:0][N:0]4CCNCC4)c3c2)cc1 0.9999699 14.2830
+18:13:30 <INFO> Terminating early in step = 14
+18:13:31 <INFO> Finished stage 2 >>>
+18:13:31 <INFO> Peak main memory usage: 3140.891 MiB
+18:13:31 <INFO> Finished REINVENT on 2024-01-29
