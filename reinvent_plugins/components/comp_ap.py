@@ -22,7 +22,6 @@ transform.k = 0.4
 
 from __future__ import annotations
 
-#__all__ = ["ChemProp"]
 import sklearn
 from rdkit.Chem import rdMolDescriptors
 from rdkit import Chem
@@ -30,7 +29,6 @@ from sklearn.linear_model import LinearRegression
 from dataclasses import dataclass, field
 from typing import List
 import logging
-#import chemprop
 import numpy as np
 from .component_results import ComponentResults
 from .add_tag import add_tag
@@ -51,40 +49,12 @@ class Parameters:
     """
 
     checkpoint: List[str]
-    #rdkit_2d_normalized: List[bool] = field(default_factory=lambda: [False])
-
-#np.mean()
 
 @add_tag("__component")
 class AnesthPot:
     def __init__(self, params: Parameters):
         logger.info(f"Calculating AP using Chandler Brady's script")
         self.ap_params = []
-
-        # needed in the normalize_smiles decorator
-        # FIXME: really needs to be configurable for each model separately
-        #self.smiles_type = 'rdkit_smiles'
-
-        #for checkpoint_dir, rdkit_2d_normalized in zip(
-        #    params.checkpoint_dir, params.rdkit_2d_normalized
-        #):
-        #    args = [
-        #        "--checkpoint_dir",  # ChemProp models directory
-        #        checkpoint_dir,
-        #        "--test_path",  # required
-        #        "/dev/null",
-        #        "--preds_path",  # required
-        #        "/dev/null",
-        #    ]
-
-        #    if rdkit_2d_normalized:
-        #        args.extend(
-        #            ["--features_generator", "rdkit_2d_normalized", "--no_features_scaling"]
-        #        )
-
-        #    with suppress_output():
-        #        chemprop_args = chemprop.args.PredictArgs().parse_args(args)
-        #        chemprop_model = chemprop.train.load_model(args=chemprop_args)
         
         for obj in params.checkpoint:
             with open(obj, 'rb') as input_file:
@@ -93,7 +63,6 @@ class AnesthPot:
         
     #@normalize_smiles
     def __call__(self, smilies: List[str]) -> np.array:
-        #smilies_list = [[smiles] for smiles in smilies]
         fingerprint=np.zeros([len(smilies),2000])
 
         for smiles_idx, smiles in enumerate(smilies):
@@ -111,11 +80,5 @@ class AnesthPot:
             scores.extend(
                 [p[0] for p in preds]
                 )
-                #np.array(
-                #    preds
-                    #[val[0] if "Invalid SMILES" not in val else np.nan for val in preds],
-                    #dtype=float,
-                #)
-            #)
 
         return (ComponentResults([np.array(scores, dtype=float)]))
